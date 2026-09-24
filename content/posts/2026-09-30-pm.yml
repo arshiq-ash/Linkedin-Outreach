@@ -1,0 +1,41 @@
+date: 2026-09-30
+slot: pm
+account: company
+pillar: Pop-culture lesson
+audience: Logistics, DTC
+reference: "Spider-Man: the 'Spider-Men pointing at each other' meme (with Brand New Day in theaters)"
+status: draft
+text: |
+  A package goes missing. Who owns the ticket?
+
+  🕷️ The brand points at the 3PL.
+  🕷️ The 3PL points at the carrier.
+  🕷️ The carrier points at the brand.
+
+  Meanwhile the customer is on hold. They didn't sign up for a Spider-Verse crossover.
+
+  This is one of the most common failures we see where logistics and e-commerce overlap. Everyone has part of the answer and nobody has the whole ticket.
+
+  How to end the pointing:
+  → One owner per ticket, always on the customer-facing side, even when the fix sits with the carrier
+  → Pre-agreed SLAs with your 3PL for investigations ("48h to confirm or reship")
+  → A "lost in transit" macro that promises what happens next and when, not "we're looking into it"
+  → Reship or refund rules the agent can apply without chasing a manager for approval
+
+  The customer shouldn't need to know your supply chain exists. They should just get their stuff.
+
+  Which link in the chain is hardest to get answers from: 3PL, carrier or internal ops?
+hashtags: [Logistics, Ecommerce, 3PL, CustomerExperience, SpiderMan]
+first_comment: "We run support across the brand ↔ 3PL ↔ carrier gap for DTC and delivery companies: optiflowcx.com/portfolio"
+alt: "Two-panel card: top shows brand, 3PL and carrier each blaming another for a lost package; bottom shows one owner resolving it."
+card:
+  layout: split
+  kicker: "Who owns the lost package?"
+  title: "Everyone's pointing. *Nobody owns it.*"
+  panels:
+    - label: "Without an owner"
+      text: "Brand → \"Ask the 3PL.\"\n3PL → \"Ask the carrier.\"\nCarrier → \"Ask the brand.\""
+      meta: "customer contacts: 5 · days open: 9"
+    - label: "With one owner"
+      text: "\"Carrier confirmed it's lost. Your replacement *ships today*, tracking by 5pm.\""
+      meta: "customer contacts: 1 · days open: 1"

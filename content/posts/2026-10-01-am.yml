@@ -1,0 +1,47 @@
+date: 2026-10-01
+slot: am
+account: founder
+pillar: Pop-culture lesson
+audience: "All three — logistics, robotics, DTC"
+reference: "Friends: 'We were on a break!' (S3E15)"
+status: draft
+text: |
+  "WE WERE ON A BREAK!"
+
+  Ross and Rachel spent ten seasons arguing about it because they never agreed on what "a break" meant.
+
+  Support teams have the same fight every day, at shift change.
+
+  Day shift: "I told the customer we'd call back."
+  Night shift: "You told them WHAT?"
+  Customer: "It's been 14 hours."
+
+  Nobody did anything wrong. The context just didn't make it through the handover.
+
+  When you run 24/7 across time zones, the handover is the product. Here's the 5-line handover note our teams write at the end of every shift:
+
+  1. Promised: what we told customers we'd do, and by when
+  2. Waiting on: tickets blocked by another team or partner
+  3. Escalated: open L2 cases and who owns them
+  4. Weird: anything unusual (a spike, a bug, an angry VIP)
+  5. Changed: new SOPs, macros or product info this shift
+
+  It takes 5 minutes, and it prevents a lot of "we were on a break" moments.
+
+  Team Ross or Team Rachel? (Choose carefully. This is LinkedIn.)
+hashtags: [CustomerSupport, RemoteWork, Operations, Friends, CustomerExperience]
+first_comment: "Want the handover note as a template? Comment \"BREAK\" and I'll DM it."
+alt: "Chat mock-up showing a shift handover gone wrong, the day shift promised a callback the night shift didn't know about."
+card:
+  layout: chat
+  voice: founder
+  kicker: "24/7 handovers"
+  title: "We were on a *break!*"
+  titleSize: 64
+  channel: "#support-shift-handover"
+  messages:
+    - { from: c, meta: "Day shift · 17:58", text: "Logging off! Pretty quiet today 👋" }
+    - { from: sys, text: "— 6 hours later —" }
+    - { from: c, meta: "Customer · 00:14", text: "You said someone would CALL me back today??" }
+    - { from: a, meta: "Night shift · 00:15", text: "…we said *what?*" }
+    - { from: sys, text: "fix: a 5-line handover note, every shift" }

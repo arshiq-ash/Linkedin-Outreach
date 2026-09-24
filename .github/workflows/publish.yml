@@ -1,0 +1,53 @@
+# Publishes approved posts twice a day through the official LinkedIn API.
+# Times are UTC: 12:15 = 08:15 US Eastern (EDT) = 17:15 PKT; 16:15 = 12:15 ET = 21:15 PKT.
+# GitHub may start scheduled runs a few minutes late. Move the crons one hour later when US clocks change on Nov 1.
+name: Publish LinkedIn posts
+
+on:
+  schedule:
+    - cron: "15 12 * * *"
+    - cron: "15 16 * * *"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "am or pm"
+        required: true
+        default: am
+      date:
+        description: "YYYY-MM-DD (blank = today, Pakistan time)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency: publish
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Pick slot
+        id: slot
+        run: |
+          if [ -n "${{ inputs.slot }}" ]; then echo "slot=${{ inputs.slot }}" >> "$GITHUB_OUTPUT";
+          elif [ "${{ github.event.schedule }}" = "15 12 * * *" ]; then echo "slot=am" >> "$GITHUB_OUTPUT";
+          else echo "slot=pm" >> "$GITHUB_OUTPUT"; fi
+      - name: Publish
+        env:
+          LINKEDIN_TOKEN_FOUNDER: ${{ secrets.LINKEDIN_TOKEN_FOUNDER }}
+          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+          LINKEDIN_TOKEN_COMPANY: ${{ secrets.LINKEDIN_TOKEN_COMPANY }}
+          LINKEDIN_ORG_URN: ${{ secrets.LINKEDIN_ORG_URN }}
+        run: node scripts/publish.mjs --slot ${{ steps.slot.outputs.slot }} ${{ inputs.date && format('--date {0}', inputs.date) || '' }}
+      - name: Record posted status
+        run: |
+          git config user.name "linkedin-bot"
+          git config user.email "linkedin-bot@users.noreply.github.com"
+          git add content/posts
+          git diff --cached --quiet || (git commit -m "Mark ${{ steps.slot.outputs.slot }} post as published" && git push)

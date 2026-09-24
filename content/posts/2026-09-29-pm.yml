@@ -1,0 +1,38 @@
+date: 2026-09-29
+slot: pm
+account: company
+pillar: Pop-culture lesson / framework
+audience: Logistics & delivery
+reference: "Breaking Bad: Mike Ehrmantraut's 'No more half measures' (S3E12)"
+status: draft
+text: |
+  "No more half measures." — Mike Ehrmantraut
+
+  The most common half measure we see in logistics support: hiring more agents without building an escalation path.
+
+  It looks like progress. Headcount goes up and the queue drops for two weeks. Then it's back, because every hard case still ends up with the one person who knows how dispatch actually works.
+
+  Full measures look like this:
+
+  1. Define L1 vs L2. Write down what the frontline resolves and what gets escalated, and make it a document, not a gut call.
+  2. Give each escalation a destination. "Escalate to ops" isn't a destination. A named queue with a response-time target is.
+  3. Close the loop. L2 fixes go back into L1 macros so the same case doesn't escalate twice.
+  4. Grow L2 on purpose. In one operation we move experienced agents into L2 every quarter.
+  5. Measure repeat contacts, not just first reply time.
+
+  Half measures scale headcount. Full measures scale the operation.
+
+  Which step do most teams skip, in your experience?
+hashtags: [Logistics, SupplyChain, CustomerSupport, CXOps, BreakingBad]
+first_comment: "How we design L1 → L2 escalation paths: optiflowcx.com/portfolio"
+alt: "Numbered checklist titled 'No more half measures' listing five steps to build L1 to L2 escalation paths in logistics support."
+card:
+  layout: list
+  kicker: "Logistics CX · framework"
+  title: "No more *half measures.*"
+  items:
+    - { head: "Define L1 vs L2 in writing", body: "What the frontline resolves vs. escalates, documented, not guessed." }
+    - { head: "Give escalations a destination", body: "A named queue with a response-time target, not \"ask ops\"." }
+    - { head: "Close the loop", body: "L2 fixes become L1 macros, so no case escalates twice." }
+    - { head: "Grow L2 on purpose", body: "Move experienced agents up every quarter." }
+    - { head: "Track *repeat contacts*", body: "First reply time hides the tickets that come back." }

@@ -1,0 +1,5 @@
+name,first_name,title,company,segment,linkedin_url,hook,status,queued_on,invited_on,note
+Sample Person One,Sample,Head of Customer Experience,Example Freight Co,logistics,https://www.linkedin.com/in/example-one,"your post on failed-delivery rates was spot on",new,,,
+Sample Person Two,Sample,Founder & CEO,Example Robotics,robotics,https://www.linkedin.com/in/example-two,,new,,,
+Sample Person Three,Sample,VP Operations,Example Apparel,dtc,https://www.linkedin.com/in/example-three,"congrats on the new Shopify Plus launch",new,,,
+Sample Person Four,Sample,Director of Support,Example Last Mile,logistics,https://www.linkedin.com/in/example-four,,new,,,

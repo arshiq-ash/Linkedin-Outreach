@@ -1,0 +1,19 @@
+{
+  "name": "linkedin-outreach",
+  "private": true,
+  "type": "module",
+  "description": "OptiFlowCX + founder LinkedIn content engine: post calendar, branded image renderer, official-API publisher and a human-in-the-loop outreach queue.",
+  "scripts": {
+    "render": "node scripts/render-images.mjs",
+    "post": "node scripts/publish.mjs",
+    "queue": "node scripts/outreach-queue.mjs",
+    "preview": "node scripts/build-preview.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "js-yaml": "^4.1.0",
+    "playwright": "1.56.1"
+  }
+}

@@ -1,0 +1,37 @@
+date: 2026-09-27
+slot: pm
+account: company
+pillar: Pop-culture lesson
+audience: Robotics & consumer hardware
+reference: "Lanterns (HBO, Sundays through Oct 4), the Green Lantern Corps' 'brightest day, blackest night' oath"
+status: draft
+text: |
+  "In brightest day, in blackest night…"
+
+  The new Lanterns episode drops tonight, and that oath describes 24/7 support pretty well.
+
+  Your customers don't break their robot mower at 2pm on a Tuesday. It happens Saturday morning, when they finally have time to use it. Or at 11pm, when they're doing the setup their kid was supposed to help with.
+
+  If your support closes at 5pm, your weekend customers are on their own.
+
+  How we staff real 24/7 coverage for hardware and robotics brands:
+  → Shifts with written handovers, so the night agent knows what the day agent promised
+  → L1 handles the known fixes. L2 gets the weird ones, with clear escalation rules
+  → Pre-sales and after-sales on the same team, because the question before the purchase shapes the ticket after it
+
+  For one consumer robotics brand, this started as 3 people doing pre-sales. It's now a 15-person, 24/7 operation across chat, email and phone.
+
+  No ticket escapes our sight. 💚
+
+  Hardware founders: when do your hardest tickets actually come in?
+hashtags: [Robotics, ConsumerTech, CustomerSupport, CustomerExperience, Lanterns]
+first_comment: "The 3 → 15 journey, pre-sales to after-sales: optiflowcx.com/portfolio"
+alt: "Quote card riffing on the Green Lantern oath: support for robotics brands has to cover the brightest day and the blackest night."
+card:
+  layout: scene
+  kicker: "24/7 coverage"
+  episode: "TONIGHT ON HBO · IN BLACKEST NIGHT"
+  quote: "In brightest day,\nin blackest night,\n*no ticket shall escape my sight.*"
+  quoteSize: 80
+  said: "the 2am shift, probably"
+  takeaway: "Robots break on weekends. *Your support should still be on.*"

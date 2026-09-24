@@ -1,0 +1,40 @@
+date: 2026-09-26
+slot: am
+account: founder
+pillar: Pop-culture lesson / behind the scenes
+audience: Hardware & robotics
+reference: "The Office — 'Money' (Season 4), Michael: 'I declare bankruptcy!'"
+status: draft
+text: |
+  "I DECLARE BANKRUPTCY!"
+
+  Michael Scott thought saying it out loud would make the debt disappear.
+
+  A lot of hardware brands do the same thing with their support backlog. They mark 600 tickets as "solved" on a Friday and call it a fresh start.
+
+  Declaring inbox bankruptcy doesn't clear the debt. The customers are still waiting. They just stop telling you and go leave a review somewhere else.
+
+  One of the most complex operations we run is for a 3D-printer brand. Product info, SOPs and FAQs changed every single week. That's the perfect setup for a backlog to explode.
+
+  What kept it under control:
+  → Biweekly training so agents never ran on last month's answers
+  → SOPs treated like software, versioned and updated as a team
+  → Channels added one at a time: email first, then chat, then phone
+
+  The team grew from 4 to 14 people, and support now runs 24/7 across all three channels.
+
+  No bankruptcy declared.
+
+  What's the biggest backlog you've ever inherited?
+hashtags: [CustomerSupport, Hardware, CXOps, TheOffice, Leadership]
+first_comment: "The full journey (email → chat → phone, 4 → 14 people) is on our portfolio: optiflowcx.com/portfolio"
+alt: "Sitcom-style quote card: 'I declare bankruptcy!' with the takeaway that closing tickets in bulk doesn't make customers stop waiting."
+card:
+  layout: scene
+  voice: founder
+  kicker: "Backlog management"
+  episode: "S04E04 · THE ONE WHERE WE CLOSED 600 TICKETS"
+  quote: "I declare *bankruptcy!*"
+  quoteSize: 108
+  said: "a support lead, bulk-closing the backlog on a Friday"
+  takeaway: "Bulk-closing tickets doesn't clear the debt. The customers are *still waiting.* They just stop telling you."

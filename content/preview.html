@@ -1,0 +1,636 @@
+<title>OptiFlowCX Content Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--ground:#F3F6FA;--surface:#FFFFFF;--ink:#0E1726;--muted:#5A6A80;--line:#D8E0EA;--accent:#1E5FD9;--accent-ink:#FFFFFF;
+--draft:#9A5B00;--draft-bg:#FFF1D6;--ok:#157347;--ok-bg:#DDF5E7;--done:#1E5FD9;--done-bg:#E1ECFF;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ground:#080E1A;--surface:#101A2C;--ink:#E7EEF8;--muted:#8D9DB4;--line:#1F2C44;--accent:#5AA8FF;--accent-ink:#06101F;
+--draft:#FFC266;--draft-bg:#3A2A0E;--ok:#6BDB9C;--ok-bg:#10301F;--done:#8CC4FF;--done-bg:#132846;color-scheme:dark}}
+:root[data-theme="dark"]{--ground:#080E1A;--surface:#101A2C;--ink:#E7EEF8;--muted:#8D9DB4;--line:#1F2C44;--accent:#5AA8FF;--accent-ink:#06101F;
+--draft:#FFC266;--draft-bg:#3A2A0E;--ok:#6BDB9C;--ok-bg:#10301F;--done:#8CC4FF;--done-bg:#132846;color-scheme:dark}
+body{background:var(--ground);color:var(--ink);font:15px/1.55 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:40px 64px;display:grid;gap:36px}
+header{display:grid;gap:10px}
+.eyebrow,.meta,.chars,.comment span:first-child,.day h2 small{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.eyebrow{color:var(--accent)}
+h1{font:italic 600 clamp(32px,5vw,48px)/1.05 Fraunces,Georgia,serif;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:65ch}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.filter{display:flex;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:4px}
+.filter button{background:none;color:var(--muted);border:0;border-radius:7px;padding:6px 12px;font:inherit;cursor:pointer}
+.filter button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.tally{display:flex;gap:8px;flex-wrap:wrap}
+.day{display:grid;gap:14px}
+.day h2{margin:0;font-size:20px;font-weight:600;display:flex;gap:12px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:8px}
+.day h2 small{color:var(--muted);font-weight:500}
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:16px}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:14px;display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px;min-width:0}
+.post img{width:150px;height:auto;border-radius:8px;display:block}
+.body{display:grid;gap:10px;min-width:0;align-content:start}
+.meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;color:var(--muted)}
+.acct{color:var(--ink);font-weight:500}
+.acct.company{color:var(--accent)}
+.status{padding:2px 8px;border-radius:99px}
+.status.draft{color:var(--draft);background:var(--draft-bg)}.status.approved{color:var(--ok);background:var(--ok-bg)}.status.posted{color:var(--done);background:var(--done-bg)}
+.ref{margin:0;font-size:13px;color:var(--muted)}.ref b{color:var(--ink);font-weight:600}
+pre{margin:0;white-space:pre-wrap;font:inherit;font-size:14px;max-height:220px;overflow:auto;border-top:1px solid var(--line);padding-top:10px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.actions button{font:inherit;font-size:13px;font-weight:600;border-radius:8px;padding:7px 12px;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink)}
+.actions button.ghost{background:none;color:var(--accent)}
+.actions button:focus-visible,.filter button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chars{color:var(--muted);margin-left:auto}
+.comment{margin:0;font-size:13px;display:grid;gap:2px}.comment span:first-child{color:var(--muted)}
+@media (max-width:560px){.post{grid-template-columns:1fr}.post img{width:100%;max-width:320px}}
+</style>
+<div class="wrap">
+<header>
+  <div class="eyebrow">OptiFlowCX × Arshiq Shoib · LinkedIn</div>
+  <h1>Content calendar, week of Friday, Sep 25</h1>
+  <p class="lede">Two posts a day: the founder profile in the US morning and the company page at US lunchtime. Each post has its card, the final text with hashtags, and a first comment that carries the link. To approve a post, change its <code>status</code> to <code>approved</code> in <code>content/posts/</code>. The scheduled workflow publishes only approved posts.</p>
+  <div class="bar">
+    <div class="filter" role="group" aria-label="Show posts for">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="founder" aria-pressed="false">Founder</button>
+      <button type="button" data-f="company" aria-pressed="false">Company</button>
+    </div>
+    <div class="tally meta"><span class="status draft">14 draft</span><span class="status approved">0 approved</span><span class="status posted">0 posted</span></div>
+  </div>
+</header>
+<section class="day"><h2>Friday, Sep 25 <small>2 posts</small></h2><div class="posts">
+<article class="post" data-account="founder">
+  <img src="images/2026-09-25-am.png" alt="Text card styled like a sitcom title card quoting 'PIVOT!', with the takeaway that BFCM needs SOPs, not louder instructions." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct founder">Founder profile</span>
+      <span class="slot">08:15 ET · 17:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson</b> · DTC e-commerce<br><span>Friends — The One with the Cop (S5E16), Ross's 'PIVOT!'</span></p>
+    <pre id="t-2026-09-25-am">Every DTC brand has a &quot;PIVOT!&quot; moment in Q4.
+
+You know the scene. Ross, Rachel and Chandler are trying to get a couch up a staircase. Ross has a plan: yell &quot;PIVOT!&quot; louder each time.
+
+The couch ends up cut in half.
+
+That's what BFCM looks like for most support teams:
+→ Order volume triples overnight
+→ Everyone jumps into the inbox
+→ Nobody agreed on who owns returns, refunds or WISMO
+→ The founder's plan is to answer faster
+
+Yelling &quot;PIVOT!&quot; at your helpdesk isn't a plan.
+
+We've scaled a DTC support operation from 1 person to a 6-person 24/7 team. The couch made it up the stairs because of three boring things we set up before the rush:
+
+1. SOPs for the 5 ticket types that make up ~80% of volume
+2. Macros written in the brand's voice, not &quot;Dear Valued Customer&quot;
+3. A handover doc between shifts so nothing gets left on the landing
+
+Black Friday is about 9 weeks away.
+
+What's your couch this year? The thing you know will get stuck on the stairs?
+
+#DTC #Ecommerce #CustomerExperience #BFCM #Shopify</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-25-am">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-25-am">Copy first comment</button>
+      <span class="chars">1007 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-25-am">If you want the 5-ticket-type SOP template we use for DTC brands, comment &quot;PIVOT&quot; and I'll send it over.</span></p>
+  </div>
+</article>
+<article class="post" data-account="company">
+  <img src="images/2026-09-25-pm.png" alt="Two-panel card: top shows a viral launch with orders up 5x, bottom shows the support inbox 48 hours later full of WISMO tickets." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct company">Company page</span>
+      <span class="slot">12:15 ET · 21:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson</b> · DTC e-commerce, consumer tech<br><span>Spider-Man: Brand New Day (2026), now the top-grossing film ever at the US box office</span></p>
+    <pre id="t-2026-09-25-pm">With great GMV comes great responsibility.
+
+Spider-Man: Brand New Day just became the highest-grossing film ever at the US box office. Picture the theater chains on opening weekend: sold-out screens, popcorn lines out the door, ticket apps melting.
+
+Now picture your brand going viral.
+
+A creator posts your product. Orders 5x in 48 hours. Then, right on schedule:
+• &quot;Where is my order?&quot;
+• &quot;Can I change my size?&quot;
+• &quot;It says delivered but it's not here&quot;
+• &quot;Do you ship to Canada?&quot;
+
+The spike in demand is the easy part. The support spike that follows it decides whether those buyers come back.
+
+What we build for brands before the viral moment:
+→ Surge macros for the 10 questions that will definitely come
+→ A tagging taxonomy, so you can see why tickets spiked, not just that they did
+→ Coverage that stretches across time zones instead of burning out your one CX hire
+
+Your Spidey-sense should go off before the inbox does.
+
+Has a viral moment ever broken your support queue? What cracked first?
+
+#CustomerExperience #Ecommerce #DTC #CustomerSupport #SpiderMan</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-25-pm">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-25-pm">Copy first comment</button>
+      <span class="chars">1063 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-25-pm">How we staff for surges without long lock-ins: optiflowcx.com/portfolio</span></p>
+  </div>
+</article></div></section>
+<section class="day"><h2>Saturday, Sep 26 <small>2 posts</small></h2><div class="posts">
+<article class="post" data-account="founder">
+  <img src="images/2026-09-26-am.png" alt="Sitcom-style quote card: 'I declare bankruptcy!' with the takeaway that closing tickets in bulk doesn't make customers stop waiting." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct founder">Founder profile</span>
+      <span class="slot">08:15 ET · 17:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson / behind the scenes</b> · Hardware &amp; robotics<br><span>The Office — 'Money' (Season 4), Michael: 'I declare bankruptcy!'</span></p>
+    <pre id="t-2026-09-26-am">&quot;I DECLARE BANKRUPTCY!&quot;
+
+Michael Scott thought saying it out loud would make the debt disappear.
+
+A lot of hardware brands do the same thing with their support backlog. They mark 600 tickets as &quot;solved&quot; on a Friday and call it a fresh start.
+
+Declaring inbox bankruptcy doesn't clear the debt. The customers are still waiting. They just stop telling you and go leave a review somewhere else.
+
+One of the most complex operations we run is for a 3D-printer brand. Product info, SOPs and FAQs changed every single week. That's the perfect setup for a backlog to explode.
+
+What kept it under control:
+→ Biweekly training so agents never ran on last month's answers
+→ SOPs treated like software, versioned and updated as a team
+→ Channels added one at a time: email first, then chat, then phone
+
+The team grew from 4 to 14 people, and support now runs 24/7 across all three channels.
+
+No bankruptcy declared.
+
+What's the biggest backlog you've ever inherited?
+
+#CustomerSupport #Hardware #CXOps #TheOffice #Leadership</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-26-am">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-26-am">Copy first comment</button>
+      <span class="chars">1012 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-26-am">The full journey (email → chat → phone, 4 → 14 people) is on our portfolio: optiflowcx.com/portfolio</span></p>
+  </div>
+</article>
+<article class="post" data-account="company">
+  <img src="images/2026-09-26-pm.png" alt="Chat window mock-up: a customer asks where their package is three times, then a support agent resolves it by checking dispatch." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct company">Company page</span>
+      <span class="slot">12:15 ET · 21:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Operator insight</b> · Logistics &amp; delivery<br><span>No pop-culture hook: straight operator content</span></p>
+    <pre id="t-2026-09-26-pm">In logistics support, the customer who contacts you 3 times usually had one problem the whole time.
+
+Here's why. In delivery support, the first contact is rarely the actual problem. It's the symptom:
+&quot;Where's my package?&quot; usually means one of these:
+• The scan hasn't updated in 36 hours
+• It was delivered to the wrong unit
+• The driver marked &quot;attempted&quot; and never came back
+
+Each one needs a different fix. When agents only have a tracking link, they send the tracking link. Then the customer calls again.
+
+We run a delivery support team where each person handles 90–100 calls a day. That volume only works because every call type has its own path:
+→ Dispatch inquiries go to live dispatch visibility, not a canned reply
+→ &quot;Delivered but missing&quot; gets an investigation workflow with a set callback time
+→ Repeat contacts get flagged so the third call goes to a senior agent
+
+The team started with 3 dedicated people. It's now 6.
+
+If your repeat-contact rate is high, the problem usually isn't how fast you answer. It's that the answers don't solve anything.
+
+Logistics folks: what's the most common &quot;symptom&quot; ticket you see?
+
+#Logistics #LastMileDelivery #CustomerExperience #SupplyChain #CustomerSupport</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-26-pm">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-26-pm">Copy first comment</button>
+      <span class="chars">1207 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-26-pm">How we set up delivery support operations: optiflowcx.com/portfolio</span></p>
+  </div>
+</article></div></section>
+<section class="day"><h2>Sunday, Sep 27 <small>2 posts</small></h2><div class="posts">
+<article class="post" data-account="founder">
+  <img src="images/2026-09-27-am.png" alt="Quote card riffing on Breaking Bad: consistency comes from process, not talent. Four agents giving four different answers is the problem." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct founder">Founder profile</span>
+      <span class="slot">08:15 ET · 17:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson</b> · All three — logistics, robotics, DTC<br><span>Breaking Bad: Walter White's obsession with process and purity</span></p>
+    <pre id="t-2026-09-27-am">Walter White was a terrible person with an excellent SOP.
+
+(Stick with me.)
+
+The whole show makes one thing clear. His product wasn't better because he was a genius. It was better because he refused to skip steps. Same process, same measurements, every batch, whoever was cooking.
+
+Jesse's batches were worse because Jesse improvised.
+
+Most support teams are full of Jesses. Talented, well-meaning people, all improvising:
+→ 4 agents give 4 different answers to the same refund question
+→ The &quot;real&quot; process lives in one senior agent's head
+→ Quality depends on who picked up the ticket
+
+Consistency isn't a personality trait. It's documentation.
+
+Every account we take on starts the same way before a single ticket gets answered: Discover → Design → Deploy → Operate → Optimize. Workflows, macros and escalation paths get written down, so the 3rd agent we add gives the same answer as the 1st.
+
+Say my name? No thanks.
+Say the SOP version number instead.
+
+Who's the Jesse on your team? (Affectionately.)
+
+#CustomerExperience #Operations #SOP #BreakingBad #Startups</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-27-am">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-27-am">Copy first comment</button>
+      <span class="chars">1065 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-27-am">Our 5-step operating model, with examples from DTC, logistics and hardware: optiflowcx.com/portfolio</span></p>
+  </div>
+</article>
+<article class="post" data-account="company">
+  <img src="images/2026-09-27-pm.png" alt="Quote card riffing on the Green Lantern oath: support for robotics brands has to cover the brightest day and the blackest night." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct company">Company page</span>
+      <span class="slot">12:15 ET · 21:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson</b> · Robotics &amp; consumer hardware<br><span>Lanterns (HBO, Sundays through Oct 4), the Green Lantern Corps' 'brightest day, blackest night' oath</span></p>
+    <pre id="t-2026-09-27-pm">&quot;In brightest day, in blackest night…&quot;
+
+The new Lanterns episode drops tonight, and that oath describes 24/7 support pretty well.
+
+Your customers don't break their robot mower at 2pm on a Tuesday. It happens Saturday morning, when they finally have time to use it. Or at 11pm, when they're doing the setup their kid was supposed to help with.
+
+If your support closes at 5pm, your weekend customers are on their own.
+
+How we staff real 24/7 coverage for hardware and robotics brands:
+→ Shifts with written handovers, so the night agent knows what the day agent promised
+→ L1 handles the known fixes. L2 gets the weird ones, with clear escalation rules
+→ Pre-sales and after-sales on the same team, because the question before the purchase shapes the ticket after it
+
+For one consumer robotics brand, this started as 3 people doing pre-sales. It's now a 15-person, 24/7 operation across chat, email and phone.
+
+No ticket escapes our sight. 💚
+
+Hardware founders: when do your hardest tickets actually come in?
+
+#Robotics #ConsumerTech #CustomerSupport #CustomerExperience #Lanterns</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-27-pm">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-27-pm">Copy first comment</button>
+      <span class="chars">1079 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-27-pm">The 3 → 15 journey, pre-sales to after-sales: optiflowcx.com/portfolio</span></p>
+  </div>
+</article></div></section>
+<section class="day"><h2>Monday, Sep 28 <small>2 posts</small></h2><div class="posts">
+<article class="post" data-account="founder">
+  <img src="images/2026-09-28-am.png" alt="Stat card: support team scaled from 1 to 6 people, 24/7 coverage, 100 to 150 emails per person per day, Google rating 3.4 to 4.4 observed." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct founder">Founder profile</span>
+      <span class="slot">08:15 ET · 17:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Case study / founder story</b> · DTC e-commerce<br><span>Friends: Chandler's 'Could it BE any more…'</span></p>
+    <pre id="t-2026-09-28-am">Could we BE any more understaffed?
+
+That was basically the brief when we started working with Silksilky, a DTC fashion brand.
+
+Where it started:
+• 1 person on support
+• Sizing questions, WISMO, returns, refunds and exchanges all in one inbox
+• Each email handled from scratch
+
+What we did (nothing glamorous):
+→ Mapped every ticket type and wrote an SOP for each
+→ Built macros inside Re:amaze and worked orders directly in Shopify admin
+→ Added people only when the process could absorb them
+
+Where it is now:
+• A 6-person team, 24/7
+• 100–150 emails per person per day
+• Their Google rating moved from about 3.4 to 4.4 while we ran support
+
+To be honest about that last number: the rating moved because of the brand's product, marketing and fulfilment too. We were one part of it.
+
+But I've seen what happens to ratings when support is one exhausted person at 1am. The difference is real.
+
+What was the first support hire or process that changed things for your brand?
+
+#DTC #Ecommerce #CustomerExperience #Shopify #FounderStory</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-28-am">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-28-am">Copy first comment</button>
+      <span class="chars">1030 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-28-am">Full Silksilky journey on our portfolio: optiflowcx.com/portfolio</span></p>
+  </div>
+</article>
+<article class="post" data-account="company">
+  <img src="images/2026-09-28-pm.png" alt="Quote card in the style of Dwight Schrute: 'It's defective? False.' Many robot returns start with the wrong pre-sale guidance." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct company">Company page</span>
+      <span class="slot">12:15 ET · 21:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson</b> · Robotics &amp; consumer tech<br><span>The Office: Dwight Schrute's 'Question… False.' format</span></p>
+    <pre id="t-2026-09-28-pm">Question: What's the #1 reason a $3,000 robot gets returned?
+
+&quot;It's defective.&quot;
+False.
+
+In the robotics queues we have worked, a lot of returns start before the sale. The customer bought the wrong model for their yard, their floor plan or their use case, and nobody asked the right questions before checkout.
+
+That's why we think pre-sales is part of support. It isn't only sales.
+
+For one consumer robotics brand we started with a 3-person team doing only pre-sales:
+→ Pre-bookings and purchase guidance
+→ Product-fit questions (&quot;Will this handle a 30° slope?&quot;)
+→ Setting honest expectations before the order
+
+Then we added after-sales: order status, technical troubleshooting, returns, refunds and exchanges, with L1 handling the known fixes and L2 taking the complex cases.
+
+The team is now 15 people, running 24/7.
+
+Bears. Beets. Better pre-sales.
+
+Robotics folks: what's the question you wish every customer asked before buying?
+
+#Robotics #ConsumerTech #CustomerExperience #PreSales #TheOffice</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-28-pm">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-28-pm">Copy first comment</button>
+      <span class="chars">999 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-28-pm">Pre-sales + after-sales under one team, the 3 → 15 story: optiflowcx.com/portfolio</span></p>
+  </div>
+</article></div></section>
+<section class="day"><h2>Tuesday, Sep 29 <small>2 posts</small></h2><div class="posts">
+<article class="post" data-account="founder">
+  <img src="images/2026-09-29-am.png" alt="Two-panel card: top shows a 9-condition return policy, bottom shows the ticket it creates. The lesson is that surprise policies create tickets." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct founder">Founder profile</span>
+      <span class="slot">08:15 ET · 17:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson</b> · DTC e-commerce<br><span>Seinfeld: 'The Soup Nazi' (S7E6), 'No soup for you!'</span></p>
+    <pre id="t-2026-09-29-am">A lot of DTC return policies read like the Soup Nazi wrote them.
+
+&quot;Returns accepted within 14 days, unworn, tags attached, original packaging, receipt required, final sale items excluded, exchanges only, customer pays shipping…&quot;
+
+NO REFUND FOR YOU. 🍲
+
+Here's what I've learned from running DTC inboxes where each agent handles 100+ emails a day: customers aren't upset about the policy itself. They're upset that they didn't understand it until they needed it.
+
+A strict policy is fine. A surprise policy isn't.
+
+What actually lowers return-related tickets:
+→ Put the policy in plain words on the product page, not only in the footer
+→ Proactive &quot;how to exchange for a different size&quot; emails after delivery
+→ Macros that explain why, not just what (&quot;final sale because it's a sample item&quot;)
+→ Agents who can offer an exchange before the customer asks for a refund
+
+The Soup Nazi had lines out the door because the soup was incredible.
+
+Your product probably isn't that good. (Sorry.) Make returns easy to understand.
+
+What's the strangest line you've ever seen in a return policy?
+
+#Ecommerce #DTC #Returns #CustomerExperience #Seinfeld</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-29-am">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-29-am">Copy first comment</button>
+      <span class="chars">1136 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-29-am">We run returns, refunds and exchanges for DTC brands inside Shopify admin + your helpdesk: optiflowcx.com/portfolio</span></p>
+  </div>
+</article>
+<article class="post" data-account="company">
+  <img src="images/2026-09-29-pm.png" alt="Numbered checklist titled 'No more half measures' listing five steps to build L1 to L2 escalation paths in logistics support." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct company">Company page</span>
+      <span class="slot">12:15 ET · 21:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson / framework</b> · Logistics &amp; delivery<br><span>Breaking Bad: Mike Ehrmantraut's 'No more half measures' (S3E12)</span></p>
+    <pre id="t-2026-09-29-pm">&quot;No more half measures.&quot; — Mike Ehrmantraut
+
+The most common half measure we see in logistics support: hiring more agents without building an escalation path.
+
+It looks like progress. Headcount goes up and the queue drops for two weeks. Then it's back, because every hard case still ends up with the one person who knows how dispatch actually works.
+
+Full measures look like this:
+
+1. Define L1 vs L2. Write down what the frontline resolves and what gets escalated, and make it a document, not a gut call.
+2. Give each escalation a destination. &quot;Escalate to ops&quot; isn't a destination. A named queue with a response-time target is.
+3. Close the loop. L2 fixes go back into L1 macros so the same case doesn't escalate twice.
+4. Grow L2 on purpose. In one operation we move experienced agents into L2 every quarter.
+5. Measure repeat contacts, not just first reply time.
+
+Half measures scale headcount. Full measures scale the operation.
+
+Which step do most teams skip, in your experience?
+
+#Logistics #SupplyChain #CustomerSupport #CXOps #BreakingBad</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-29-pm">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-29-pm">Copy first comment</button>
+      <span class="chars">1047 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-29-pm">How we design L1 → L2 escalation paths: optiflowcx.com/portfolio</span></p>
+  </div>
+</article></div></section>
+<section class="day"><h2>Wednesday, Sep 30 <small>2 posts</small></h2><div class="posts">
+<article class="post" data-account="founder">
+  <img src="images/2026-09-30-am.png" alt="Sitcom-style quote card: 'Yes, Chef.' with the takeaway that support teams need stations and owners the way a kitchen brigade does." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct founder">Founder profile</span>
+      <span class="slot">08:15 ET · 17:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson / leadership</b> · All three — logistics, robotics, DTC<br><span>The Bear (FX/Hulu): the kitchen brigade, 'Yes, Chef', 'Every second counts'</span></p>
+    <pre id="t-2026-09-30-am">&quot;Yes, Chef.&quot;
+
+If you've watched The Bear, you know the chaos in that kitchen isn't about talent. It starts when nobody knows who owns which station.
+
+Once the brigade system clicks, the same people who were panicking during service start running it smoothly.
+
+A support team works the same way.
+
+🔪 Stations = channels. Email, chat and phone each have owners, not &quot;whoever's free.&quot;
+🧾 Tickets on the rail = queues with clear priority. The next thing to do is never a mystery.
+🗣️ &quot;Heard&quot; = acknowledgment. Customers get told &quot;we've got this&quot; before the fix lands.
+👨‍🍳 Sous chef = your L2. Somebody senior is always on the line, not in a meeting.
+🧽 Close-down = shift handover notes. The next shift inherits a clean kitchen.
+
+&quot;Every second counts&quot; is on the wall at The Bear. In support it's &quot;every handover counts.&quot; Most dropped tickets I've seen were dropped between two people, not by one.
+
+Which station is always on fire in your operation?
+
+#Leadership #CustomerExperience #Operations #TheBear #TeamBuilding</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-30-am">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-30-am">Copy first comment</button>
+      <span class="chars">1014 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-30-am">If you're building a support brigade from scratch, here's how we do it: optiflowcx.com/portfolio</span></p>
+  </div>
+</article>
+<article class="post" data-account="company">
+  <img src="images/2026-09-30-pm.png" alt="Two-panel card: top shows brand, 3PL and carrier each blaming another for a lost package; bottom shows one owner resolving it." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct company">Company page</span>
+      <span class="slot">12:15 ET · 21:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson</b> · Logistics, DTC<br><span>Spider-Man: the 'Spider-Men pointing at each other' meme (with Brand New Day in theaters)</span></p>
+    <pre id="t-2026-09-30-pm">A package goes missing. Who owns the ticket?
+
+🕷️ The brand points at the 3PL.
+🕷️ The 3PL points at the carrier.
+🕷️ The carrier points at the brand.
+
+Meanwhile the customer is on hold. They didn't sign up for a Spider-Verse crossover.
+
+This is one of the most common failures we see where logistics and e-commerce overlap. Everyone has part of the answer and nobody has the whole ticket.
+
+How to end the pointing:
+→ One owner per ticket, always on the customer-facing side, even when the fix sits with the carrier
+→ Pre-agreed SLAs with your 3PL for investigations (&quot;48h to confirm or reship&quot;)
+→ A &quot;lost in transit&quot; macro that promises what happens next and when, not &quot;we're looking into it&quot;
+→ Reship or refund rules the agent can apply without chasing a manager for approval
+
+The customer shouldn't need to know your supply chain exists. They should just get their stuff.
+
+Which link in the chain is hardest to get answers from: 3PL, carrier or internal ops?
+
+#Logistics #Ecommerce #3PL #CustomerExperience #SpiderMan</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-09-30-pm">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-09-30-pm">Copy first comment</button>
+      <span class="chars">1020 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-09-30-pm">We run support across the brand ↔ 3PL ↔ carrier gap for DTC and delivery companies: optiflowcx.com/portfolio</span></p>
+  </div>
+</article></div></section>
+<section class="day"><h2>Thursday, Oct 1 <small>2 posts</small></h2><div class="posts">
+<article class="post" data-account="founder">
+  <img src="images/2026-10-01-am.png" alt="Chat mock-up showing a shift handover gone wrong, the day shift promised a callback the night shift didn't know about." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct founder">Founder profile</span>
+      <span class="slot">08:15 ET · 17:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson</b> · All three — logistics, robotics, DTC<br><span>Friends: 'We were on a break!' (S3E15)</span></p>
+    <pre id="t-2026-10-01-am">&quot;WE WERE ON A BREAK!&quot;
+
+Ross and Rachel spent ten seasons arguing about it because they never agreed on what &quot;a break&quot; meant.
+
+Support teams have the same fight every day, at shift change.
+
+Day shift: &quot;I told the customer we'd call back.&quot;
+Night shift: &quot;You told them WHAT?&quot;
+Customer: &quot;It's been 14 hours.&quot;
+
+Nobody did anything wrong. The context just didn't make it through the handover.
+
+When you run 24/7 across time zones, the handover is the product. Here's the 5-line handover note our teams write at the end of every shift:
+
+1. Promised: what we told customers we'd do, and by when
+2. Waiting on: tickets blocked by another team or partner
+3. Escalated: open L2 cases and who owns them
+4. Weird: anything unusual (a spike, a bug, an angry VIP)
+5. Changed: new SOPs, macros or product info this shift
+
+It takes 5 minutes, and it prevents a lot of &quot;we were on a break&quot; moments.
+
+Team Ross or Team Rachel? (Choose carefully. This is LinkedIn.)
+
+#CustomerSupport #RemoteWork #Operations #Friends #CustomerExperience</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-10-01-am">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-10-01-am">Copy first comment</button>
+      <span class="chars">1016 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-10-01-am">Want the handover note as a template? Comment &quot;BREAK&quot; and I'll DM it.</span></p>
+  </div>
+</article>
+<article class="post" data-account="company">
+  <img src="images/2026-10-01-pm.png" alt="Quote card riffing on Severance: 'The work is mysterious and important.' Support data shouldn't be a mystery to the founder." loading="lazy" width="1080" height="1350">
+  <div class="body">
+    <div class="meta">
+      <span class="acct company">Company page</span>
+      <span class="slot">12:15 ET · 21:15 PKT</span>
+      <span class="status draft">draft</span>
+    </div>
+    <p class="ref"><b>Pop-culture lesson / offer</b> · DTC, robotics, logistics<br><span>Severance (Apple TV+): 'The work is mysterious and important'</span></p>
+    <pre id="t-2026-10-01-pm">&quot;The work is mysterious and important.&quot;
+
+At Lumon, nobody knows what the macrodata refiners actually do. That makes a great TV show and a terrible support operation.
+
+If you asked your team today:
+• Why was ticket volume up 30% last Tuesday?
+• Which 3 issues drive most refunds?
+• Which macro gets the most follow-up replies?
+
+…would anyone know? Or is your CX work mysterious too?
+
+Every account we run gets:
+→ Tagging that explains why customers reached out, not just which channel they used
+→ Weekly QA on real conversations, with coaching, not just scores
+→ A short report the founder actually reads: the top issues, what changed and what to fix upstream
+
+Support is the only team that talks to hundreds of customers a day. Its insights shouldn't stay locked on a severed floor.
+
+We're taking on a small number of new brands in logistics, robotics and DTC this quarter, starting with a focused pilot, and no long lock-ins.
+
+Is your support team a cost center or your best source of customer data?
+
+#CustomerExperience #CXOps #Severance #DTC #Robotics</pre>
+    <div class="actions">
+      <button type="button" data-copy="t-2026-10-01-pm">Copy post</button>
+      <button type="button" class="ghost" data-copy="c-2026-10-01-pm">Copy first comment</button>
+      <span class="chars">1054 / 3,000 chars</span>
+    </div>
+    <p class="comment"><span>First comment</span><span id="c-2026-10-01-pm">Start a conversation: info@optiflowcx.com · optiflowcx.com/portfolio</span></p>
+  </div>
+</article></div></section>
+</div>
+<script>
+document.addEventListener("click", async (e) => {
+  const b = e.target.closest("[data-copy]");
+  if (b) {
+    const el = document.getElementById(b.dataset.copy), label = b.textContent;
+    try { await navigator.clipboard.writeText(el.textContent); b.textContent = "Copied"; }
+    catch { const r = document.createRange(); r.selectNodeContents(el); getSelection().removeAllRanges(); getSelection().addRange(r); b.textContent = "Selected, press Ctrl+C"; }
+    setTimeout(() => (b.textContent = label), 1600);
+  }
+  const f = e.target.closest("[data-f]");
+  if (f) {
+    document.querySelectorAll("[data-f]").forEach((x) => x.setAttribute("aria-pressed", x === f));
+    document.querySelectorAll(".post").forEach((p) => (p.hidden = f.dataset.f !== "all" && p.dataset.account !== f.dataset.f));
+    document.querySelectorAll(".day").forEach((d) => (d.hidden = !d.querySelector(".post:not([hidden])")));
+  }
+});
+</script>

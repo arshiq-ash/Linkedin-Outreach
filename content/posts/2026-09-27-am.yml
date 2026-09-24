@@ -1,0 +1,41 @@
+date: 2026-09-27
+slot: am
+account: founder
+pillar: Pop-culture lesson
+audience: "All three — logistics, robotics, DTC"
+reference: "Breaking Bad: Walter White's obsession with process and purity"
+status: draft
+text: |
+  Walter White was a terrible person with an excellent SOP.
+
+  (Stick with me.)
+
+  The whole show makes one thing clear. His product wasn't better because he was a genius. It was better because he refused to skip steps. Same process, same measurements, every batch, whoever was cooking.
+
+  Jesse's batches were worse because Jesse improvised.
+
+  Most support teams are full of Jesses. Talented, well-meaning people, all improvising:
+  → 4 agents give 4 different answers to the same refund question
+  → The "real" process lives in one senior agent's head
+  → Quality depends on who picked up the ticket
+
+  Consistency isn't a personality trait. It's documentation.
+
+  Every account we take on starts the same way before a single ticket gets answered: Discover → Design → Deploy → Operate → Optimize. Workflows, macros and escalation paths get written down, so the 3rd agent we add gives the same answer as the 1st.
+
+  Say my name? No thanks.
+  Say the SOP version number instead.
+
+  Who's the Jesse on your team? (Affectionately.)
+hashtags: [CustomerExperience, Operations, SOP, BreakingBad, Startups]
+first_comment: "Our 5-step operating model, with examples from DTC, logistics and hardware: optiflowcx.com/portfolio"
+alt: "Quote card riffing on Breaking Bad: consistency comes from process, not talent. Four agents giving four different answers is the problem."
+card:
+  layout: scene
+  voice: founder
+  kicker: "Process > talent"
+  episode: "S02E01 · RESPECT THE PROCESS"
+  quote: "Say my name.\n*Say the SOP version.*"
+  quoteSize: 96
+  said: "what we tell every new agent on day one"
+  takeaway: "4 agents giving 4 different answers isn't a people problem. It's a *documentation* problem."

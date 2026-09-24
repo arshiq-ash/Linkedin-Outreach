@@ -1,0 +1,44 @@
+date: 2026-09-25
+slot: pm
+account: company
+pillar: Pop-culture lesson
+audience: DTC e-commerce, consumer tech
+reference: "Spider-Man: Brand New Day (2026), now the top-grossing film ever at the US box office"
+status: draft
+text: |
+  With great GMV comes great responsibility.
+
+  Spider-Man: Brand New Day just became the highest-grossing film ever at the US box office. Picture the theater chains on opening weekend: sold-out screens, popcorn lines out the door, ticket apps melting.
+
+  Now picture your brand going viral.
+
+  A creator posts your product. Orders 5x in 48 hours. Then, right on schedule:
+  • "Where is my order?"
+  • "Can I change my size?"
+  • "It says delivered but it's not here"
+  • "Do you ship to Canada?"
+
+  The spike in demand is the easy part. The support spike that follows it decides whether those buyers come back.
+
+  What we build for brands before the viral moment:
+  → Surge macros for the 10 questions that will definitely come
+  → A tagging taxonomy, so you can see why tickets spiked, not just that they did
+  → Coverage that stretches across time zones instead of burning out your one CX hire
+
+  Your Spidey-sense should go off before the inbox does.
+
+  Has a viral moment ever broken your support queue? What cracked first?
+hashtags: [CustomerExperience, Ecommerce, DTC, CustomerSupport, SpiderMan]
+first_comment: "How we staff for surges without long lock-ins: optiflowcx.com/portfolio"
+alt: "Two-panel card: top shows a viral launch with orders up 5x, bottom shows the support inbox 48 hours later full of WISMO tickets."
+card:
+  layout: split
+  kicker: "With great GMV…"
+  title: "…comes great *responsibility.*"
+  panels:
+    - label: "Your launch, hour 1"
+      text: "Creator video hits.\nOrders up *5x.* Team group chat is all 🎉"
+      meta: "dashboard: ▲ 412%"
+    - label: "Your inbox, hour 48"
+      text: "\"Where is my order?\"\n\"Where is my order??\"\n\"WHERE. IS. MY. ORDER.\""
+      meta: "unassigned: 1,284 · first reply: 31h"

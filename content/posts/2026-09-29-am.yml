@@ -1,0 +1,44 @@
+date: 2026-09-29
+slot: am
+account: founder
+pillar: Pop-culture lesson
+audience: DTC e-commerce
+reference: "Seinfeld: 'The Soup Nazi' (S7E6), 'No soup for you!'"
+status: draft
+text: |
+  A lot of DTC return policies read like the Soup Nazi wrote them.
+
+  "Returns accepted within 14 days, unworn, tags attached, original packaging, receipt required, final sale items excluded, exchanges only, customer pays shipping…"
+
+  NO REFUND FOR YOU. 🍲
+
+  Here's what I've learned from running DTC inboxes where each agent handles 100+ emails a day: customers aren't upset about the policy itself. They're upset that they didn't understand it until they needed it.
+
+  A strict policy is fine. A surprise policy isn't.
+
+  What actually lowers return-related tickets:
+  → Put the policy in plain words on the product page, not only in the footer
+  → Proactive "how to exchange for a different size" emails after delivery
+  → Macros that explain why, not just what ("final sale because it's a sample item")
+  → Agents who can offer an exchange before the customer asks for a refund
+
+  The Soup Nazi had lines out the door because the soup was incredible.
+
+  Your product probably isn't that good. (Sorry.) Make returns easy to understand.
+
+  What's the strangest line you've ever seen in a return policy?
+hashtags: [Ecommerce, DTC, Returns, CustomerExperience, Seinfeld]
+first_comment: "We run returns, refunds and exchanges for DTC brands inside Shopify admin + your helpdesk: optiflowcx.com/portfolio"
+alt: "Two-panel card: top shows a 9-condition return policy, bottom shows the ticket it creates. The lesson is that surprise policies create tickets."
+card:
+  layout: split
+  voice: founder
+  kicker: "Returns CX"
+  title: "No refund for you! 🍲"
+  panels:
+    - label: "Your return policy"
+      text: "14 days · unworn · tags on · original box · receipt · no final sale · exchange only · *you pay shipping*"
+      meta: "location: footer, 6pt font"
+    - label: "The ticket it creates"
+      text: "\"Why didn't anyone tell me this BEFORE I ordered??\""
+      meta: "sentiment: 😡 · follow-ups: 4 · review: pending"
