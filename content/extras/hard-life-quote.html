@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Inter;src:url(../../node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2) format("woff2");font-weight:100 900}
+@font-face{font-family:Fraunces;src:url(../../node_modules/@fontsource/fraunces/files/fraunces-latin-600-italic.woff2);font-weight:600;font-style:italic}
+@font-face{font-family:JBMono;src:url(../../node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2);font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px}
+body{display:flex;background:#FFFFFF;font-family:Inter,sans-serif;color:#0B1F4D;overflow:hidden}
+.main{flex:1;position:relative;padding:90px 70px 90px 90px;display:flex;flex-direction:column;
+  background-image:linear-gradient(#EEF3FC 1px,transparent 1px),linear-gradient(90deg,#EEF3FC 1px,transparent 1px);background-size:60px 60px}
+.kicker{font-family:JBMono;font-weight:700;font-size:24px;letter-spacing:.16em;color:#1E5FD9;display:flex;align-items:center;gap:18px}
+.kicker:before{content:"";width:46px;height:4px;border-radius:2px;background:#1E5FD9}
+.q{margin:auto 0;font-family:Fraunces;font-style:italic;font-weight:600;font-size:84px;line-height:1.08;letter-spacing:-.015em}
+.q:before{content:"\201C";display:block;font-size:200px;line-height:.55;color:#1E5FD9;margin-bottom:24px}
+.q span{display:block;margin-top:18px}
+.q .soft{color:#50668C}
+.q .punch{color:#1E5FD9;text-decoration:underline;text-decoration-color:#9EC2FF;text-decoration-thickness:8px;text-underline-offset:16px;padding-right:.1em}
+.by{font-size:28px;font-weight:600}.by small{display:block;margin-top:6px;font-size:22px;font-weight:400;color:#50668C}
+.side{width:260px;background:linear-gradient(180deg,#1E5FD9,#2F74F0 60%,#1A4FB8);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;position:relative}
+.side img{width:190px;height:190px;border-radius:50%;box-shadow:0 0 0 8px rgba(255,255,255,.18),0 20px 50px rgba(6,20,60,.35)}
+.side .name{writing-mode:vertical-rl;transform:rotate(180deg);font-family:JBMono;font-weight:700;font-size:26px;letter-spacing:.3em;color:#FFFFFF}
+.side .url{position:absolute;bottom:70px;font-family:JBMono;font-weight:700;font-size:18px;letter-spacing:.08em;color:#CFE0FF}
+</style></head><body>
+<div class="main">
+  <div class="kicker">FOUNDER NOTES</div>
+  <div class="q"><span class="soft">Your life is already hard.</span><span>Start a business.</span><span class="punch">Make it harder.</span></div>
+  <div class="by">Arshiq Shoib<small>Founder · OptiFlowCX</small></div>
+</div>
+<div class="side"><img src="../../assets/logo.png" alt=""><div class="name">OPTIFLOWCX</div><div class="url">optiflowcx.com</div></div>
+</body></html>
