@@ -4,7 +4,7 @@ account: company
 pillar: Pop-culture lesson
 audience: DTC e-commerce, consumer tech
 reference: "Spider-Man: Brand New Day (2026), now the top-grossing film ever at the US box office"
-status: draft
+status: approved
 text: |
   With great GMV comes great responsibility.
 
@@ -33,6 +33,7 @@ first_comment: "How we staff for surges without long lock-ins: optiflowcx.com/po
 alt: "Two-panel card: top shows a viral launch with orders up 5x, bottom shows the support inbox 48 hours later full of WISMO tickets."
 card:
   layout: split
+  theme: light
   kicker: "With great GMV…"
   title: "…comes great *responsibility.*"
   panels:

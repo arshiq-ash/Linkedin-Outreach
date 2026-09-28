@@ -43,6 +43,12 @@ body.light .grid{opacity:.35;background-image:linear-gradient(#E6EEFB 1px,transp
 body.light .cx{background:linear-gradient(135deg,#1E5FD9,#2F74F0);border:0}
 body.light .cx b{color:#CFE0FF}
 body.light .cx p,body.light .cx .hl{color:#FFFFFF;background:none;-webkit-background-clip:border-box}
+body.light .pn.a{background:linear-gradient(135deg,#1E5FD9,#2F74F0);border:0;color:#FFFFFF}
+body.light .pn.a .lab{color:#CFE0FF}
+body.light .pn.a .meta{color:#CFE0FF}
+body.light .pn.b{background:#EEF4FF;border-color:#D3E1F7}
+body.light .pn.b .lab{color:var(--blue)}
+body.light .pn.a .hl{color:#FFFFFF;background:none;-webkit-background-clip:border-box;text-decoration:underline;text-decoration-color:#9EC2FF;text-decoration-thickness:4px;text-underline-offset:8px}
 body.light .cx .hl{text-decoration:underline;text-decoration-color:#9EC2FF;text-decoration-thickness:4px;text-underline-offset:8px}
 `;
 
