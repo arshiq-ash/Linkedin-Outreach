@@ -1,0 +1,37 @@
+date: 2026-10-03
+slot: am
+account: founder
+pillar: Pop-culture lesson / leadership
+audience: "All three — logistics, robotics, DTC"
+reference: "The Bear (FX/Hulu): the kitchen brigade, 'Yes, Chef', 'Every second counts'"
+status: draft
+text: |
+  "Yes, Chef."
+
+  If you've watched The Bear, you know the chaos in that kitchen isn't about talent. It starts when nobody knows who owns which station.
+
+  Once the brigade system clicks, the same people who were panicking during service start running it smoothly.
+
+  A support team works the same way.
+
+  🔪 Stations = channels. Email, chat and phone each have owners, not "whoever's free."
+  🧾 Tickets on the rail = queues with clear priority. The next thing to do is never a mystery.
+  🗣️ "Heard" = acknowledgment. Customers get told "we've got this" before the fix lands.
+  👨‍🍳 Sous chef = your L2. Somebody senior is always on the line, not in a meeting.
+  🧽 Close-down = shift handover notes. The next shift inherits a clean kitchen.
+
+  "Every second counts" is on the wall at The Bear. In support it's "every handover counts." Most dropped tickets I've seen were dropped between two people, not by one.
+
+  Which station is always on fire in your operation?
+hashtags: [Leadership, CustomerExperience, Operations, TheBear, TeamBuilding]
+first_comment: "If you're building a support brigade from scratch, here's how we do it: optiflowcx.com/portfolio"
+alt: "Sitcom-style quote card: 'Yes, Chef.' with the takeaway that support teams need stations and owners the way a kitchen brigade does."
+card:
+  layout: scene
+  voice: founder
+  kicker: "Team structure"
+  episode: "SERVICE · FRIDAY NIGHT RUSH"
+  quote: "Yes, Chef.\n*Heard.*"
+  quoteSize: 116
+  said: "a support team that knows who owns which station"
+  takeaway: "Most dropped tickets fall *between two people*, not on one. Stations, owners, handovers."

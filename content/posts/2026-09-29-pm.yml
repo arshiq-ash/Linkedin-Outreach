@@ -1,38 +1,42 @@
 date: 2026-09-29
 slot: pm
 account: company
-pillar: Pop-culture lesson / framework
+pillar: Operator insight
 audience: Logistics & delivery
-reference: "Breaking Bad: Mike Ehrmantraut's 'No more half measures' (S3E12)"
+reference: "No pop-culture hook: straight operator content"
 status: draft
 text: |
-  "No more half measures." — Mike Ehrmantraut
+  In logistics support, the customer who contacts you 3 times usually had one problem the whole time.
 
-  The most common half measure we see in logistics support: hiring more agents without building an escalation path.
+  Here's why. In delivery support, the first contact is rarely the actual problem. It's the symptom:
+  "Where's my package?" usually means one of these:
+  • The scan hasn't updated in 36 hours
+  • It was delivered to the wrong unit
+  • The driver marked "attempted" and never came back
 
-  It looks like progress. Headcount goes up and the queue drops for two weeks. Then it's back, because every hard case still ends up with the one person who knows how dispatch actually works.
+  Each one needs a different fix. When agents only have a tracking link, they send the tracking link. Then the customer calls again.
 
-  Full measures look like this:
+  We run a delivery support team where each person handles 90–100 calls a day. That volume only works because every call type has its own path:
+  → Dispatch inquiries go to live dispatch visibility, not a canned reply
+  → "Delivered but missing" gets an investigation workflow with a set callback time
+  → Repeat contacts get flagged so the third call goes to a senior agent
 
-  1. Define L1 vs L2. Write down what the frontline resolves and what gets escalated, and make it a document, not a gut call.
-  2. Give each escalation a destination. "Escalate to ops" isn't a destination. A named queue with a response-time target is.
-  3. Close the loop. L2 fixes go back into L1 macros so the same case doesn't escalate twice.
-  4. Grow L2 on purpose. In one operation we move experienced agents into L2 every quarter.
-  5. Measure repeat contacts, not just first reply time.
+  The team started with 3 dedicated people. It's now 6.
 
-  Half measures scale headcount. Full measures scale the operation.
+  If your repeat-contact rate is high, the problem usually isn't how fast you answer. It's that the answers don't solve anything.
 
-  Which step do most teams skip, in your experience?
-hashtags: [Logistics, SupplyChain, CustomerSupport, CXOps, BreakingBad]
-first_comment: "How we design L1 → L2 escalation paths: optiflowcx.com/portfolio"
-alt: "Numbered checklist titled 'No more half measures' listing five steps to build L1 to L2 escalation paths in logistics support."
+  Logistics folks: what's the most common "symptom" ticket you see?
+hashtags: [Logistics, LastMileDelivery, CustomerExperience, SupplyChain, CustomerSupport]
+first_comment: "How we set up delivery support operations: optiflowcx.com/portfolio"
+alt: "Chat window mock-up: a customer asks where their package is three times, then a support agent resolves it by checking dispatch."
 card:
-  layout: list
-  kicker: "Logistics CX · framework"
-  title: "No more *half measures.*"
-  items:
-    - { head: "Define L1 vs L2 in writing", body: "What the frontline resolves vs. escalates, documented, not guessed." }
-    - { head: "Give escalations a destination", body: "A named queue with a response-time target, not \"ask ops\"." }
-    - { head: "Close the loop", body: "L2 fixes become L1 macros, so no case escalates twice." }
-    - { head: "Grow L2 on purpose", body: "Move experienced agents up every quarter." }
-    - { head: "Track *repeat contacts*", body: "First reply time hides the tickets that come back." }
+  layout: chat
+  kicker: "Logistics CX"
+  title: "Contact #3 is *never* about contact #1."
+  channel: "delivery support · live"
+  messages:
+    - { from: c, meta: "Mon 09:12", text: "Hi, where's my package?" }
+    - { from: a, meta: "Agent", text: "Here's your tracking link! 📦" }
+    - { from: c, meta: "Tue 18:40", text: "Tracking hasn't moved since yesterday??" }
+    - { from: sys, text: "— repeat contact flagged → routed to dispatch —" }
+    - { from: a, meta: "Senior agent", text: "Checked with dispatch: it went to unit 4B, not 4D. Driver's re-routing it. You'll have it by *6pm today.*" }

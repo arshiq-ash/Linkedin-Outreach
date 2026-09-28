@@ -2,40 +2,43 @@ date: 2026-09-28
 slot: pm
 account: company
 pillar: Pop-culture lesson
-audience: Robotics & consumer tech
-reference: "The Office: Dwight Schrute's 'Question… False.' format"
+audience: DTC e-commerce, consumer tech
+reference: "Spider-Man: Brand New Day (2026), now the top-grossing film ever at the US box office"
 status: draft
 text: |
-  Question: What's the #1 reason a $3,000 robot gets returned?
+  With great GMV comes great responsibility.
 
-  "It's defective."
-  False.
+  Spider-Man: Brand New Day just became the highest-grossing film ever at the US box office. Picture the theater chains on opening weekend: sold-out screens, popcorn lines out the door, ticket apps melting.
 
-  In the robotics queues we have worked, a lot of returns start before the sale. The customer bought the wrong model for their yard, their floor plan or their use case, and nobody asked the right questions before checkout.
+  Now picture your brand going viral.
 
-  That's why we think pre-sales is part of support. It isn't only sales.
+  A creator posts your product. Orders 5x in 48 hours. Then, right on schedule:
+  • "Where is my order?"
+  • "Can I change my size?"
+  • "It says delivered but it's not here"
+  • "Do you ship to Canada?"
 
-  For one consumer robotics brand we started with a 3-person team doing only pre-sales:
-  → Pre-bookings and purchase guidance
-  → Product-fit questions ("Will this handle a 30° slope?")
-  → Setting honest expectations before the order
+  The spike in demand is the easy part. The support spike that follows it decides whether those buyers come back.
 
-  Then we added after-sales: order status, technical troubleshooting, returns, refunds and exchanges, with L1 handling the known fixes and L2 taking the complex cases.
+  What we build for brands before the viral moment:
+  → Surge macros for the 10 questions that will definitely come
+  → A tagging taxonomy, so you can see why tickets spiked, not just that they did
+  → Coverage that stretches across time zones instead of burning out your one CX hire
 
-  The team is now 15 people, running 24/7.
+  Your Spidey-sense should go off before the inbox does.
 
-  Bears. Beets. Better pre-sales.
-
-  Robotics folks: what's the question you wish every customer asked before buying?
-hashtags: [Robotics, ConsumerTech, CustomerExperience, PreSales, TheOffice]
-first_comment: "Pre-sales + after-sales under one team, the 3 → 15 story: optiflowcx.com/portfolio"
-alt: "Quote card in the style of Dwight Schrute: 'It's defective? False.' Many robot returns start with the wrong pre-sale guidance."
+  Has a viral moment ever broken your support queue? What cracked first?
+hashtags: [CustomerExperience, Ecommerce, DTC, CustomerSupport, SpiderMan]
+first_comment: "How we staff for surges without long lock-ins: optiflowcx.com/portfolio"
+alt: "Two-panel card: top shows a viral launch with orders up 5x, bottom shows the support inbox 48 hours later full of WISMO tickets."
 card:
-  layout: scene
-  kicker: "Robotics CX"
-  episode: "QUESTION: WHY WAS THE ROBOT RETURNED?"
-  quote: "It's defective.\n*False.*"
-  quoteSize: 116
-  said: "Dwight, reviewing the returns report"
-  cxLabel: "FACT"
-  takeaway: "Many robotics returns start *before checkout*: wrong model, wrong expectations, nobody asked."
+  layout: split
+  kicker: "With great GMV…"
+  title: "…comes great *responsibility.*"
+  panels:
+    - label: "Your launch, hour 1"
+      text: "Creator video hits.\nOrders up *5x.* Team group chat is all 🎉"
+      meta: "dashboard: ▲ 412%"
+    - label: "Your inbox, hour 48"
+      text: "\"Where is my order?\"\n\"Where is my order??\"\n\"WHERE. IS. MY. ORDER.\""
+      meta: "unassigned: 1,284 · first reply: 31h"

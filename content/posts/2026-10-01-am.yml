@@ -1,47 +1,47 @@
 date: 2026-10-01
 slot: am
 account: founder
-pillar: Pop-culture lesson
-audience: "All three — logistics, robotics, DTC"
-reference: "Friends: 'We were on a break!' (S3E15)"
+pillar: Case study / founder story
+audience: DTC e-commerce
+reference: "Friends: Chandler's 'Could it BE any more…'"
 status: draft
 text: |
-  "WE WERE ON A BREAK!"
+  Could we BE any more understaffed?
 
-  Ross and Rachel spent ten seasons arguing about it because they never agreed on what "a break" meant.
+  That was basically the brief when we started working with Silksilky, a DTC fashion brand.
 
-  Support teams have the same fight every day, at shift change.
+  Where it started:
+  • 1 person on support
+  • Sizing questions, WISMO, returns, refunds and exchanges all in one inbox
+  • Each email handled from scratch
 
-  Day shift: "I told the customer we'd call back."
-  Night shift: "You told them WHAT?"
-  Customer: "It's been 14 hours."
+  What we did (nothing glamorous):
+  → Mapped every ticket type and wrote an SOP for each
+  → Built macros inside Re:amaze and worked orders directly in Shopify admin
+  → Added people only when the process could absorb them
 
-  Nobody did anything wrong. The context just didn't make it through the handover.
+  Where it is now:
+  • A 6-person team, 24/7
+  • 100–150 emails per person per day
+  • Their Google rating moved from about 3.4 to 4.4 while we ran support
 
-  When you run 24/7 across time zones, the handover is the product. Here's the 5-line handover note our teams write at the end of every shift:
+  To be honest about that last number: the rating moved because of the brand's product, marketing and fulfilment too. We were one part of it.
 
-  1. Promised: what we told customers we'd do, and by when
-  2. Waiting on: tickets blocked by another team or partner
-  3. Escalated: open L2 cases and who owns them
-  4. Weird: anything unusual (a spike, a bug, an angry VIP)
-  5. Changed: new SOPs, macros or product info this shift
+  But I've seen what happens to ratings when support is one exhausted person at 1am. The difference is real.
 
-  It takes 5 minutes, and it prevents a lot of "we were on a break" moments.
-
-  Team Ross or Team Rachel? (Choose carefully. This is LinkedIn.)
-hashtags: [CustomerSupport, RemoteWork, Operations, Friends, CustomerExperience]
-first_comment: "Want the handover note as a template? Comment \"BREAK\" and I'll DM it."
-alt: "Chat mock-up showing a shift handover gone wrong, the day shift promised a callback the night shift didn't know about."
+  What was the first support hire or process that changed things for your brand?
+hashtags: [DTC, Ecommerce, CustomerExperience, Shopify, FounderStory]
+first_comment: "Full Silksilky journey on our portfolio: optiflowcx.com/portfolio"
+alt: "Stat card: support team scaled from 1 to 6 people, 24/7 coverage, 100 to 150 emails per person per day, Google rating 3.4 to 4.4 observed."
 card:
-  layout: chat
+  layout: stat
   voice: founder
-  kicker: "24/7 handovers"
-  title: "We were on a *break!*"
-  titleSize: 64
-  channel: "#support-shift-handover"
-  messages:
-    - { from: c, meta: "Day shift · 17:58", text: "Logging off! Pretty quiet today 👋" }
-    - { from: sys, text: "— 6 hours later —" }
-    - { from: c, meta: "Customer · 00:14", text: "You said someone would CALL me back today??" }
-    - { from: a, meta: "Night shift · 00:15", text: "…we said *what?*" }
-    - { from: sys, text: "fix: a 5-line handover note, every shift" }
+  kicker: "Case study · DTC fashion"
+  title: "Could we *BE* any more understaffed?"
+  from: "1"
+  to: "6"
+  unit: "support people · now running 24/7"
+  rows:
+    - { value: "100–150", label: "emails / person / day" }
+    - { value: "3.4 → 4.4", label: "Google rating, observed*" }
+  note: "*Observed during the engagement, alongside the brand's own product, marketing and fulfilment work."

@@ -1,4 +1,5 @@
 // Branded 1080x1350 (4:5) LinkedIn card templates.
+// Set `theme: light` on a card for a white/blue version; the default is dark.
 // Every card is original typography + shapes: no film stills, logos or actor likenesses,
 // so pop-culture references stay commentary and never reuse copyrighted imagery.
 import { pathToFileURL } from "node:url";
@@ -35,6 +36,14 @@ body{background:var(--bg);color:var(--ink);font-family:Inter,sans-serif;position
 .foot .who{font-weight:700;font-size:26px}
 .foot .sub{color:var(--mute);font-size:21px;margin-top:3px}
 .foot .tag{margin-left:auto;font-family:JBMono;font-size:20px;color:var(--mute)}
+/* theme: light — white ground, brand blue ink and a solid blue takeaway panel */
+body.light{--bg:#FFFFFF;--panel:#EEF4FF;--line:#D3E1F7;--blue:#1E5FD9;--sky:#1A56DB;--ice:#3B82F6;--ink:#0B1F4D;--mute:#50668C;--amber:#B45309}
+body.light .glow{background:radial-gradient(900px 600px at 110% -10%,rgba(30,95,217,.14),transparent 60%),radial-gradient(700px 500px at -20% 110%,rgba(59,130,246,.10),transparent 60%)}
+body.light .grid{opacity:.35;background-image:linear-gradient(#E6EEFB 1px,transparent 1px),linear-gradient(90deg,#E6EEFB 1px,transparent 1px)}
+body.light .cx{background:linear-gradient(135deg,#1E5FD9,#2F74F0);border:0}
+body.light .cx b{color:#CFE0FF}
+body.light .cx p,body.light .cx .hl{color:#FFFFFF;background:none;-webkit-background-clip:border-box}
+body.light .cx .hl{text-decoration:underline;text-decoration-color:#9EC2FF;text-decoration-thickness:4px;text-underline-offset:8px}
 `;
 
 function footer(card) {
@@ -52,6 +61,7 @@ function scene(c) {
   .qb{margin:auto 0}
   .quote{font-family:Fraunces;font-style:italic;font-weight:600;font-size:${c.quoteSize || 92}px;line-height:1.08;letter-spacing:-.01em}
   .quote:before{content:"\\201C";display:block;font-size:180px;line-height:.6;color:var(--blue);margin-bottom:10px}
+  .quote .hl{font-style:italic;padding-right:.08em}
   .said{margin-top:26px;font-size:26px;color:var(--mute)}
   .cx{background:var(--panel);border:2px solid var(--line);border-left:8px solid var(--sky);border-radius:22px;padding:38px 42px}
   .cx b{display:block;font-family:JBMono;font-size:21px;letter-spacing:.14em;color:var(--sky);margin-bottom:14px}
@@ -154,5 +164,5 @@ export function renderCard(card) {
   const layout = LAYOUTS[card.layout];
   if (!layout) throw new Error(`Unknown card layout "${card.layout}" (use: ${Object.keys(LAYOUTS).join(", ")})`);
   return `<!doctype html><html><head><meta charset="utf-8"><style>${BASE_CSS}</style></head>
-  <body><div class="glow"></div><div class="grid"></div>${layout(card)}${footer(card)}</body></html>`;
+  <body class="${card.theme === "light" ? "light" : "dark"}"><div class="glow"></div><div class="grid"></div>${layout(card)}${footer(card)}</body></html>`;
 }

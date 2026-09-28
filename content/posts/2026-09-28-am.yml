@@ -1,47 +1,43 @@
 date: 2026-09-28
-slot: am
+slot: am            # am = 08:15 ET / 17:15 PKT, pm = 12:15 ET / 21:15 PKT
 account: founder
-pillar: Case study / founder story
+pillar: Pop-culture lesson
 audience: DTC e-commerce
-reference: "Friends: Chandler's 'Could it BE any more…'"
-status: draft
+reference: "Friends — The One with the Cop (S5E16), Ross's 'PIVOT!'"
+status: approved    # draft -> approved -> posted
 text: |
-  Could we BE any more understaffed?
+  Every DTC brand has a "PIVOT!" moment in Q4.
 
-  That was basically the brief when we started working with Silksilky, a DTC fashion brand.
+  You know the scene. Ross, Rachel and Chandler are trying to get a couch up a staircase. Ross has a plan: yell "PIVOT!" louder each time.
 
-  Where it started:
-  • 1 person on support
-  • Sizing questions, WISMO, returns, refunds and exchanges all in one inbox
-  • Each email handled from scratch
+  The couch ends up cut in half.
 
-  What we did (nothing glamorous):
-  → Mapped every ticket type and wrote an SOP for each
-  → Built macros inside Re:amaze and worked orders directly in Shopify admin
-  → Added people only when the process could absorb them
+  That's what BFCM looks like for most support teams:
+  → Order volume triples overnight
+  → Everyone jumps into the inbox
+  → Nobody agreed on who owns returns, refunds or WISMO
+  → The founder's plan is to answer faster
 
-  Where it is now:
-  • A 6-person team, 24/7
-  • 100–150 emails per person per day
-  • Their Google rating moved from about 3.4 to 4.4 while we ran support
+  Yelling "PIVOT!" at your helpdesk isn't a plan.
 
-  To be honest about that last number: the rating moved because of the brand's product, marketing and fulfilment too. We were one part of it.
+  We've scaled a DTC support operation from 1 person to a 6-person 24/7 team. The couch made it up the stairs because of three boring things we set up before the rush:
 
-  But I've seen what happens to ratings when support is one exhausted person at 1am. The difference is real.
+  1. SOPs for the 5 ticket types that make up ~80% of volume
+  2. Macros written in the brand's voice, not "Dear Valued Customer"
+  3. A handover doc between shifts so nothing gets left on the landing
 
-  What was the first support hire or process that changed things for your brand?
-hashtags: [DTC, Ecommerce, CustomerExperience, Shopify, FounderStory]
-first_comment: "Full Silksilky journey on our portfolio: optiflowcx.com/portfolio"
-alt: "Stat card: support team scaled from 1 to 6 people, 24/7 coverage, 100 to 150 emails per person per day, Google rating 3.4 to 4.4 observed."
+  Black Friday is about 8 weeks away.
+
+  What's your couch this year? The thing you know will get stuck on the stairs?
+hashtags: [DTC, Ecommerce, CustomerExperience, BFCM, Shopify]
+first_comment: "If you want the 5-ticket-type SOP template we use for DTC brands, comment \"PIVOT\" and I'll send it over."
+alt: "Text card styled like a sitcom title card quoting 'PIVOT!', with the takeaway that BFCM needs SOPs, not louder instructions."
 card:
-  layout: stat
-  voice: founder
-  kicker: "Case study · DTC fashion"
-  title: "Could we *BE* any more understaffed?"
-  from: "1"
-  to: "6"
-  unit: "support people · now running 24/7"
-  rows:
-    - { value: "100–150", label: "emails / person / day" }
-    - { value: "3.4 → 4.4", label: "Google rating, observed*" }
-  note: "*Observed during the engagement, alongside the brand's own product, marketing and fulfilment work."
+  layout: scene
+  theme: light
+  kicker: "Q4 readiness"
+  episode: "S05E16 · THE ONE WITH THE BFCM COUCH"
+  quote: "PIVOT!\nPIVOT!!\n*PIVOT!!!*"
+  quoteSize: 118
+  said: "every support team, week one of Black Friday"
+  takeaway: "Volume doesn't break teams. *Missing SOPs* do. Write them before the couch hits the stairs."
