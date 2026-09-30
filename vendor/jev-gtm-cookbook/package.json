@@ -1,0 +1,47 @@
+{
+  "name": "jev-gtm-cookbook",
+  "version": "0.1.0",
+  "description": "Open-source GTM recipes built on TypeSafe's Jev. Recipe 1: score your LinkedIn connections against your ICP and catch job changes. Local, zero dependencies.",
+  "keywords": [
+    "cold-email",
+    "cookbook",
+    "enrichment",
+    "gtm",
+    "icp",
+    "jev",
+    "job-change",
+    "lead-scoring",
+    "linkedin",
+    "outbound",
+    "sales",
+    "signals",
+    "typesafe"
+  ],
+  "homepage": "https://github.com/bcharleson/jev-gtm-cookbook#readme",
+  "bugs": {
+    "url": "https://github.com/bcharleson/jev-gtm-cookbook/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcharleson/jev-gtm-cookbook.git"
+  },
+  "author": "Brandon Charleson",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "bin": {
+    "jev-gtm-cookbook": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js serve",
+    "score": "node src/cli.js score",
+    "run-once": "node src/cli.js run",
+    "demo": "node src/cli.js demo",
+    "status": "node src/cli.js status",
+    "test": "node --test",
+    "recipe": "node src/recipe.js",
+    "enrich": "node src/cli.js enrich"
+  }
+}

@@ -8,7 +8,7 @@
 // Caps are deliberately below LinkedIn's weekly invite limit, with room to spare.
 import fs from "node:fs";
 import path from "node:path";
-import { ROOT } from "./lib.mjs";
+import { ROOT, parseCsv, toCsv } from "./lib.mjs";
 
 const DAILY_CAP = Number(process.env.DAILY_CAP || 15);
 const WEEKLY_CAP = Number(process.env.WEEKLY_CAP || 80);
@@ -22,40 +22,32 @@ const NOTES = {
     `Hi ${p.first_name}, ${p.hook || `saw your work at ${p.company}`}. I run a CX ops team that supports delivery companies (90–100 calls/agent/day). Would love to connect.`,
   robotics: (p) =>
     `Hi ${p.first_name}, ${p.hook || `${p.company} caught my eye`}. We built a 15-person 24/7 pre + after-sales team for a robotics brand. Always keen to swap notes with hardware folks.`,
+  // Connections the network scorer couldn't place in one of the three segments.
+  general: (p) =>
+    `Hi ${p.first_name}, ${p.hook || `good to see what you're building at ${p.company}`}. I run OptiFlowCX; we build support teams for growing logistics, robotics and DTC brands. Would love to connect.`,
   dtc: (p) =>
     `Hi ${p.first_name}, ${p.hook || `love what ${p.company} is building`}. I help DTC brands run WISMO/returns support 24/7. No pitch, just like connecting with good operators.`,
 };
-
-function parseCsv(text) {
-  const rows = [];
-  let row = [], cell = "", q = false;
-  for (let i = 0; i < text.length; i++) {
-    const c = text[i];
-    if (q) {
-      if (c === '"' && text[i + 1] === '"') (cell += '"'), i++;
-      else if (c === '"') q = false;
-      else cell += c;
-    } else if (c === '"') q = true;
-    else if (c === ",") row.push(cell), (cell = "");
-    else if (c === "\n" || c === "\r") {
-      if (c === "\r" && text[i + 1] === "\n") i++;
-      row.push(cell), rows.push(row), (row = []), (cell = "");
-    } else cell += c;
-  }
-  if (cell || row.length) row.push(cell), rows.push(row);
-  const [head, ...body] = rows.filter((r) => r.some(Boolean));
-  return { head, rows: body.map((r) => Object.fromEntries(head.map((h, i) => [h, r[i] ?? ""]))) };
-}
-const toCsv = (head, rows) =>
-  [head, ...rows.map((r) => head.map((h) => r[h] ?? ""))]
-    .map((r) => r.map((v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v)).join(","))
-    .join("\n") + "\n";
 
 if (!fs.existsSync(CSV)) {
   fs.copyFileSync(path.join(ROOT, "outreach/prospects.example.csv"), CSV);
   console.log("Created outreach/prospects.csv from the example. Replace the sample rows with real prospects.");
 }
+// People who are already connections (source=network) get a DM opener instead: no pitch,
+// one easy question, per the follow-up sequence in outreach/message-templates.md.
+const DMS = {
+  logistics: (p) =>
+    `Hi ${p.first_name}, ${p.hook || "hope things are good"}. Curious how ${p.company} handles customer calls and tracking questions today: in-house, or does ops pick them up on top of everything else?`,
+  robotics: (p) =>
+    `Hi ${p.first_name}, ${p.hook || "hope things are good"}. Quick question: at ${p.company}, who picks up pre-sales and troubleshooting questions after hours and on weekends?`,
+  dtc: (p) =>
+    `Hi ${p.first_name}, ${p.hook || "hope things are good"}. Curious: is support at ${p.company} still founders plus one heroic CX person, or do you have a team for WISMO and returns?`,
+  general: (p) =>
+    `Hi ${p.first_name}, ${p.hook || "hope things are good"}. Curious how customer support is set up at ${p.company} these days: in-house team, outsourced, or all hands on deck?`,
+};
+
 const { head, rows } = parseCsv(fs.readFileSync(CSV, "utf8"));
+if (!head.includes("source")) head.push("source");
 
 if (process.argv.includes("--mark-sent")) {
   let n = 0;
@@ -76,7 +68,7 @@ while (picks.length < room && Object.values(bySeg).some((l) => l.length))
   for (const list of Object.values(bySeg)) if (list.length && picks.length < room) picks.push(list.shift());
 
 for (const p of picks) {
-  p.note = (NOTES[p.segment] || NOTES.dtc)(p).slice(0, 200);
+  p.note = p.source === "network" ? (DMS[p.segment] || DMS.general)(p) : (NOTES[p.segment] || NOTES.general)(p).slice(0, 200);
   p.status = "queued";
   p.queued_on = today;
 }
@@ -96,10 +88,10 @@ textarea{width:100%;box-sizing:border-box;background:#0b111c;color:inherit;borde
 a,button{color:#fff;background:#1e6bff;border:0;border-radius:8px;padding:8px 12px;text-decoration:none;font:inherit;cursor:pointer;margin-right:6px}
 button.ghost{background:#243149}</style>
 <h1>Outreach queue · ${today}</h1>
-<p>${picks.length} requests today (${sentThisWeek} sent in the last 7 days, cap ${WEEKLY_CAP}). Open the profile, <b>read it for 20 seconds</b>, edit the note if something better stands out, then Connect. Space them out; don't send all of them in one burst.</p>
+<p>${picks.length} people today (${sentThisWeek} sent in the last 7 days, cap ${WEEKLY_CAP}). Open the profile, <b>read it for 20 seconds</b>, edit the note if something better stands out, then Connect (or Message, for existing connections). Space them out; don't send all of them in one burst.</p>
 ${picks
   .map(
-    (p, i) => `<div class="card" id="c${i}"><div class="seg">${esc(p.segment)}</div>
+    (p, i) => `<div class="card" id="c${i}"><div class="seg">${esc(p.segment)} · ${p.source === "network" ? "already connected: send as a message" : "connection request"}</div>
 <b>${esc(p.name)}</b> · ${esc(p.title)} @ ${esc(p.company)}
 <textarea rows="3" id="n${i}">${esc(p.note)}</textarea>
 <p><a href="${esc(p.linkedin_url)}" target="_blank" rel="noopener">Open profile</a>

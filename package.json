@@ -7,7 +7,14 @@
     "render": "node scripts/render-images.mjs",
     "post": "node scripts/publish.mjs",
     "queue": "node scripts/outreach-queue.mjs",
-    "preview": "node scripts/build-preview.mjs"
+    "preview": "node scripts/build-preview.mjs",
+    "network:demo": "cd vendor/jev-gtm-cookbook && JEV_MOCK=1 node src/cli.js demo",
+    "network:score": "node vendor/jev-gtm-cookbook/src/cli.js score",
+    "network:dashboard": "node vendor/jev-gtm-cookbook/src/cli.js serve",
+    "network:queue": "node scripts/network-to-queue.mjs",
+    "deals": "python3 vendor/jev-lead-scorer/outreach.py",
+    "followups": "python3 vendor/jev-lead-scorer/followup.py",
+    "deals:demo": "cd vendor/jev-lead-scorer && JEV_STUB=1 python3 demo.py"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.3.0",

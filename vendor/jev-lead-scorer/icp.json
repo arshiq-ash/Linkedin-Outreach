@@ -1,0 +1,13 @@
+{
+  "_comment": "OptiFlowCX config for jev-lead-scorer. Edit the context and angles as the offer evolves.",
+  "business_name": "OptiFlowCX",
+  "offering": "outsourced customer support and CX operations (dedicated agents for email, chat and phone, 24/7 or after-hours coverage, SOPs, QA and AI-assisted workflows)",
+  "icp_context": "OptiFlowCX ICP: growing logistics companies (couriers, last-mile delivery, freight forwarders, 3PLs), consumer robotics and hardware brands, and DTC e-commerce or Shopify brands, roughly 10 to 500 staff, based in the US, Canada, UK, Europe or Australia. Best fit: they handle a steady volume of customer calls, emails or chats, are growing or hiring support, dispatch or coordinator staff, or have gaps in after-hours and weekend coverage. A founder, owner, COO, head of operations or head of CX must be reachable. Exclude other BPOs and call centres, companies with very low inquiry volume that only serve a few large accounts, and enterprises with large in-house contact centres. Engagements start with a 1-2 agent pilot and no long lock-in.",
+  "research_context": "OptiFlowCX sells outsourced customer support teams to logistics, robotics/hardware and DTC e-commerce companies. Strong targets show inquiry volume (tracking pages, support email, phone line, live chat), growth (hiring support, dispatch or coordinator roles, new locations or services) or coverage gaps (business-hours-only phone lines, no weekend support). Weak targets serve only a handful of large B2B accounts with little inbound volume.",
+  "angles": {
+    "proof_first": "lead with a matching client result: 1 to 6 agents 24/7 for a DTC brand, 3 to 15 for a robotics brand, 90-100 calls per agent a day for a delivery company",
+    "coverage_gap": "lead with after-hours, weekend and overflow calls going to voicemail, covered by our team without new hires",
+    "hiring_signal": "lead with their open support, dispatch or coordinator roles: trial 1-2 trained agents from us before committing to local hires",
+    "ops_quality": "lead with consistency: SOPs, macros and QA so every customer gets the same answer as the business grows"
+  }
+}

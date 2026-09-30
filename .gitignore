@@ -3,3 +3,10 @@ node_modules/
 outreach/prospects.csv
 outreach/queue/
 .render.html
+# local pipeline data: prospects' names and conversations never go in git
+vendor/jev-gtm-cookbook/data/*
+!vendor/jev-gtm-cookbook/data/.gitkeep
+vendor/jev-gtm-cookbook/.env
+vendor/jev-lead-scorer/outreach.db
+vendor/jev-lead-scorer/__pycache__/
+.env

@@ -1,0 +1,28 @@
+{
+  "ideal_customer": {
+    "what_we_sell": "Outsourced customer support and CX operations: dedicated, trained agents for email, chat and phone, 24/7 coverage, SOPs, QA and AI-assisted workflows, run from Pakistan for brands in the US, UK, Europe and Australia.",
+    "target_roles": "Founders, CEOs, COOs, owners, heads or directors of operations, heads of customer experience, customer support or customer service, and dispatch or logistics operations managers who decide how customer inquiries are handled.",
+    "target_companies": "Growing logistics companies (couriers, last-mile delivery, freight forwarders, 3PLs), consumer robotics and hardware brands, and DTC e-commerce or Shopify brands, roughly 10 to 500 employees, that handle a steady volume of customer inquiries.",
+    "not_a_fit": "Students, job seekers, recruiters, other call centres or BPO and outsourcing agencies, software engineers and other individual contributors with no say over support, government, and very large enterprises with big in-house contact centres."
+  },
+  "personas": {
+    "founder_or_owner": "Founder, co-founder, owner, CEO or managing director of a company",
+    "operations_leader": "Runs operations: COO, VP, director or head of operations, operations manager, dispatch or logistics operations manager",
+    "cx_support_leader": "Runs customer experience, customer support, customer service or a contact centre",
+    "ecommerce_leader": "Runs e-commerce, a Shopify store, or retention for a DTC brand",
+    "outsourcing_competitor": "Works at a BPO, call centre or outsourcing agency that sells a similar service",
+    "other": "None of the above"
+  },
+  "weights": {
+    "role_fit": 0.4,
+    "likely_buyer": 0.3,
+    "seniority": 0.2,
+    "company_fit": 0.1
+  },
+  "cutoffs": {
+    "fit": 60,
+    "reach_out": 0.6,
+    "review": 0.4
+  },
+  "skip_if_title_matches": ["student", "intern", "retired", "seeking", "open to work", "unemployed", "looking for"]
+}
