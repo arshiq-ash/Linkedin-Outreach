@@ -49,6 +49,10 @@ body.light .pn.a .meta{color:#CFE0FF}
 body.light .pn.b{background:#EEF4FF;border-color:#D3E1F7}
 body.light .pn.b .lab{color:var(--blue)}
 body.light .pn.a .hl{color:#FFFFFF;background:none;-webkit-background-clip:border-box;text-decoration:underline;text-decoration-color:#9EC2FF;text-decoration-thickness:4px;text-underline-offset:8px}
+body.light .m.c{background:#E3ECFB;color:var(--ink)}
+body.light .m.sys{color:var(--blue)}
+body.light .m.a .hl{color:#FFFFFF;text-decoration:underline;text-decoration-color:#9EC2FF;text-decoration-thickness:3px;text-underline-offset:6px}
+body.light .bar i{background:#C9D8F2}
 body.light .cx .hl{text-decoration:underline;text-decoration-color:#9EC2FF;text-decoration-thickness:4px;text-underline-offset:8px}
 `;
 

@@ -4,7 +4,7 @@ account: founder
 pillar: Pop-culture lesson / behind the scenes
 audience: Hardware & robotics
 reference: "The Office — 'Money' (Season 4), Michael: 'I declare bankruptcy!'"
-status: draft
+status: approved
 text: |
   "I DECLARE BANKRUPTCY!"
 
@@ -31,6 +31,7 @@ first_comment: "The full journey (email → chat → phone, 4 → 14 people) is 
 alt: "Sitcom-style quote card: 'I declare bankruptcy!' with the takeaway that closing tickets in bulk doesn't make customers stop waiting."
 card:
   layout: scene
+  theme: light
   voice: founder
   kicker: "Backlog management"
   episode: "S04E04 · THE ONE WHERE WE CLOSED 600 TICKETS"

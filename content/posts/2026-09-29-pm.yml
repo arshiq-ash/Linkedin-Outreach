@@ -4,7 +4,7 @@ account: company
 pillar: Operator insight
 audience: Logistics & delivery
 reference: "No pop-culture hook: straight operator content"
-status: draft
+status: approved
 text: |
   In logistics support, the customer who contacts you 3 times usually had one problem the whole time.
 
@@ -31,6 +31,7 @@ first_comment: "How we set up delivery support operations: optiflowcx.com/portfo
 alt: "Chat window mock-up: a customer asks where their package is three times, then a support agent resolves it by checking dispatch."
 card:
   layout: chat
+  theme: light
   kicker: "Logistics CX"
   title: "Contact #3 is *never* about contact #1."
   channel: "delivery support · live"
