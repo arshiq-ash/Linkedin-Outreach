@@ -1,41 +1,44 @@
 date: 2026-09-29
-slot: am
+slot: am            # am = 08:15 ET / 17:15 PKT, pm = 12:15 ET / 21:15 PKT
 account: founder
 pillar: Pop-culture lesson / behind the scenes
-audience: Hardware & robotics
+audience: DTC clothing & fashion brands
 reference: "The Office — 'Money' (Season 4), Michael: 'I declare bankruptcy!'"
-status: approved
+status: approved    # draft -> approved -> posted
 text: |
   "I DECLARE BANKRUPTCY!"
 
   Michael Scott thought saying it out loud would make the debt disappear.
 
-  A lot of hardware brands do the same thing with their support backlog. They mark 600 tickets as "solved" on a Friday and call it a fresh start.
+  A lot of clothing brands do the same thing after a big drop or sale. The inbox hits 800 tickets, someone bulk-closes half of them on a Friday, and everyone calls it a fresh start.
 
-  Declaring inbox bankruptcy doesn't clear the debt. The customers are still waiting. They just stop telling you and go leave a review somewhere else.
+  But the customers are still there:
+  → The one who ordered a medium and needs a large before the weekend
+  → The one whose "delivered" parcel isn't on the doorstep
+  → The one who's been waiting 9 days for a refund
 
-  One of the most complex operations we run is for a 3D-printer brand. Product info, SOPs and FAQs changed every single week. That's the perfect setup for a backlog to explode.
+  They don't stop waiting. They just stop emailing you and start writing reviews.
 
-  What kept it under control:
-  → Biweekly training so agents never ran on last month's answers
-  → SOPs treated like software, versioned and updated as a team
-  → Channels added one at a time: email first, then chat, then phone
+  For a DTC fashion brand we support, sizing questions, WISMO, returns, refunds and exchanges were all landing in one inbox with one person behind it.
 
-  The team grew from 4 to 14 people, and support now runs 24/7 across all three channels.
+  What changed things:
+  → An SOP for every ticket type, starting with sizing and exchanges
+  → Macros in the brand's voice, with orders handled directly in Shopify admin
+  → Coverage that grew with demand: 1 person became a 6-person team running 24/7, each handling 100–150 emails a day
 
   No bankruptcy declared.
 
-  What's the biggest backlog you've ever inherited?
-hashtags: [CustomerSupport, Hardware, CXOps, TheOffice, Leadership]
-first_comment: "The full journey (email → chat → phone, 4 → 14 people) is on our portfolio: optiflowcx.com/portfolio"
-alt: "Sitcom-style quote card: 'I declare bankruptcy!' with the takeaway that closing tickets in bulk doesn't make customers stop waiting."
+  Fashion founders: what piles up first after a big drop: sizing, WISMO or returns?
+hashtags: [DTC, FashionBrands, Ecommerce, CustomerExperience, TheOffice]
+first_comment: "How that DTC fashion brand went from 1 support person to a 24/7 team: optiflowcx.com/portfolio"
+alt: "Sitcom-style quote card: 'I declare bankruptcy!' with the takeaway that bulk-closing a clothing brand's post-sale inbox doesn't make customers stop waiting."
 card:
   layout: scene
   theme: light
   voice: founder
-  kicker: "Backlog management"
-  episode: "S04E04 · THE ONE WHERE WE CLOSED 600 TICKETS"
+  kicker: "DTC fashion · post-drop inbox"
+  episode: "S04E04 · THE ONE AFTER THE BIG SALE"
   quote: "I declare *bankruptcy!*"
   quoteSize: 108
-  said: "a support lead, bulk-closing the backlog on a Friday"
-  takeaway: "Bulk-closing tickets doesn't clear the debt. The customers are *still waiting.* They just stop telling you."
+  said: "a clothing brand, bulk-closing 400 sizing tickets on a Friday"
+  takeaway: "Closing the ticket doesn't fix the size, the parcel or the refund. Customers are *still waiting.*"
