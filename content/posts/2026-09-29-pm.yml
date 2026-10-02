@@ -28,16 +28,17 @@ text: |
   Logistics folks: what's the most common "symptom" ticket you see?
 hashtags: [Logistics, LastMileDelivery, CustomerExperience, SupplyChain, CustomerSupport]
 first_comment: "How we set up delivery support operations: optiflowcx.com/portfolio"
-alt: "Chat window mock-up: a customer asks where their package is three times, then a support agent resolves it by checking dispatch."
+alt: "Diagram: the customer question 'Where's my package?' splits into three real problems (stale scan, wrong unit, failed delivery attempt), each with its own fix, above stats of 90-100 calls per agent a day and a team grown from 3 to 6."
 card:
-  layout: chat
+  layout: tree
   theme: light
   kicker: "Logistics CX"
-  title: "Contact #3 is *never* about contact #1."
-  channel: "delivery support · live"
-  messages:
-    - { from: c, meta: "Mon 09:12", text: "Hi, where's my package?" }
-    - { from: a, meta: "Agent", text: "Here's your tracking link! 📦" }
-    - { from: c, meta: "Tue 18:40", text: "Tracking hasn't moved since yesterday??" }
-    - { from: sys, text: "— repeat contact flagged → routed to dispatch —" }
-    - { from: a, meta: "Senior agent", text: "Checked with dispatch: it went to unit 4B, not 4D. Driver's re-routing it. You'll have it by *6pm today.*" }
+  title: "One question. *Three different problems.*"
+  root: "\"Where's my package?\""
+  branches:
+    - { cause: "Scan hasn't updated in 36 hours", fix: "Live dispatch check, not a tracking link" }
+    - { cause: "Delivered to the wrong unit", fix: "Investigation with a set callback time" }
+    - { cause: "Driver marked \"attempted\" and never came back", fix: "Re-delivery booked; repeat callers go to a senior agent" }
+  stats:
+    - { value: "90–100", label: "calls per agent, per day" }
+    - { value: "3 → 6", label: "agents as volume grew" }

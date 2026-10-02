@@ -168,7 +168,40 @@ function chat(c) {
     </div></div>`;
 }
 
-const LAYOUTS = { scene, split, stat, list, chat };
+// "Tree" — one symptom that branches into its real causes, each with its own fix.
+function tree(c) {
+  return `<style>
+  h1{margin-top:40px;font-size:${c.titleSize || 60}px;line-height:1.06;font-weight:800;letter-spacing:-.02em}
+  .root{margin-top:40px;align-self:flex-start;position:relative;background:var(--blue);color:#fff;border-radius:28px 28px 28px 8px;padding:24px 34px;font-size:42px;font-weight:750}
+  .root small{display:block;font-family:JBMono;font-size:19px;letter-spacing:.12em;color:#CFE0FF;margin-bottom:6px;font-weight:700}
+  .branches{margin-top:30px;margin-left:46px;border-left:4px solid var(--line);display:flex;flex-direction:column;gap:20px;padding:6px 0}
+  .br{position:relative;margin-left:34px;display:grid;grid-template-columns:1fr 56px 1fr;align-items:stretch}
+  .br:before{content:"";position:absolute;left:-38px;top:50%;width:34px;border-top:4px solid var(--line)}
+  .cause,.fix{border-radius:18px;padding:20px 22px;min-height:118px;display:flex;flex-direction:column;justify-content:center}
+  .cause{background:var(--panel);border:2px solid var(--line)}
+  .fix{background:#FFFFFF;border:2px solid var(--blue)}
+  body.dark .fix{background:#0E2146}
+  .cause b,.fix b{display:block;font-family:JBMono;font-size:16px;letter-spacing:.12em;color:var(--mute);margin-bottom:6px}
+  .fix b{color:var(--blue)}
+  .cause span,.fix span{font-size:27px;line-height:1.2;font-weight:650}
+  .arrow{align-self:center;text-align:center;font-size:40px;color:var(--blue);font-weight:300}
+  .stats{margin-top:auto;display:flex;gap:16px}
+  .stat{flex:1;border-top:4px solid var(--blue);padding-top:14px}
+  .stat b{display:block;font-size:44px;font-weight:800;letter-spacing:-.02em}
+  .stat span{font-size:21px;color:var(--mute)}
+  </style>
+  <div class="wrap"><div class="kicker">${esc(c.kicker)}</div>
+    <h1>${rich(c.title)}</h1>
+    <div class="root"><small>${esc(c.rootLabel || "WHAT THE CUSTOMER SAYS")}</small>${rich(c.root)}</div>
+    <div class="branches">${c.branches.map((b) => `<div class="br">
+      <div class="cause"><b>${esc(b.causeLabel || "WHAT'S REALLY WRONG")}</b><span>${rich(b.cause)}</span></div>
+      <div class="arrow">→</div>
+      <div class="fix"><b>${esc(b.fixLabel || "THE RIGHT PATH")}</b><span>${rich(b.fix)}</span></div></div>`).join("")}</div>
+    <div class="stats">${(c.stats || []).map((t) => `<div class="stat"><b>${esc(t.value)}</b><span>${esc(t.label)}</span></div>`).join("")}</div>
+  </div>`;
+}
+
+const LAYOUTS = { scene, split, stat, list, chat, tree };
 
 export function renderCard(card) {
   const layout = LAYOUTS[card.layout];
