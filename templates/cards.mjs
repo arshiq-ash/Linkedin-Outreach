@@ -88,7 +88,8 @@ function scene(c) {
 
 // "Split" — two-panel expectation vs. reality meme, drawn as UI panels.
 function split(c) {
-  const panel = (p, i) => `<div class="pn ${i ? "b" : "a"}">
+  // flip: the second panel gets the highlight (problem first, fix second).
+  const panel = (p, i) => `<div class="pn ${(c.flip ? !i : i) ? "b" : "a"}">
       <div class="lab">${esc(p.label)}</div><div class="txt">${rich(p.text)}</div>
       ${p.meta ? `<div class="meta">${esc(p.meta)}</div>` : ""}</div>`;
   return `<style>

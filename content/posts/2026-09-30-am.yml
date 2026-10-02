@@ -4,7 +4,7 @@ account: founder
 pillar: Pop-culture lesson
 audience: "All three — logistics, robotics, DTC"
 reference: "Breaking Bad: Walter White's obsession with process and purity"
-status: draft
+status: approved
 text: |
   Walter White was a terrible person with an excellent SOP.
 
@@ -29,13 +29,18 @@ text: |
   Who's the Jesse on your team? (Affectionately.)
 hashtags: [CustomerExperience, Operations, SOP, BreakingBad, Startups]
 first_comment: "Our 5-step operating model, with examples from DTC, logistics and hardware: optiflowcx.com/portfolio"
-alt: "Quote card riffing on Breaking Bad: consistency comes from process, not talent. Four agents giving four different answers is the problem."
+alt: "Two-panel card: four agents give four different answers to the same refund question; with an SOP every agent gives the same clear answer."
 card:
-  layout: scene
+  layout: split
+  theme: light
+  flip: true
   voice: founder
   kicker: "Process > talent"
-  episode: "S02E01 · RESPECT THE PROCESS"
-  quote: "Say my name.\n*Say the SOP version.*"
-  quoteSize: 96
-  said: "what we tell every new agent on day one"
-  takeaway: "4 agents giving 4 different answers isn't a people problem. It's a *documentation* problem."
+  title: "Say my name. *Say the SOP version.*"
+  panels:
+    - label: "Improvised · 4 agents"
+      text: "\"5 days.\" \"7–10 days.\"\n\"Depends on your bank.\"\n\"Let me check and get back to you.\""
+      meta: "same refund question · 4 different answers"
+    - label: "By the SOP · every agent"
+      text: "\"Your refund lands in *5–7 business days.* Here's your reference number.\""
+      meta: "same refund question · 1 answer · SOP v3.2"

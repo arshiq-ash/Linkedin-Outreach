@@ -4,7 +4,7 @@ account: company
 pillar: Pop-culture lesson
 audience: Robotics & consumer hardware
 reference: "Lanterns (HBO, Sundays through Oct 4), the Green Lantern Corps' 'brightest day, blackest night' oath"
-status: draft
+status: approved
 text: |
   "In brightest day, in blackest night…"
 
@@ -26,12 +26,18 @@ text: |
   Hardware founders: when do your hardest tickets actually come in?
 hashtags: [Robotics, ConsumerTech, CustomerSupport, CustomerExperience, Lanterns]
 first_comment: "The 3 → 15 journey, pre-sales to after-sales: optiflowcx.com/portfolio"
-alt: "Quote card riffing on the Green Lantern oath: support for robotics brands has to cover the brightest day and the blackest night."
+alt: "Two-panel card: support open Monday to Friday 9 to 5 is closed 128 of 168 hours a week, while robots break on Saturday mornings, Sunday afternoons and at 11pm."
 card:
-  layout: scene
-  kicker: "24/7 coverage"
-  episode: "SEASON FINALE SUNDAY · IN BLACKEST NIGHT"
-  quote: "In brightest day,\nin blackest night,\n*no ticket shall escape my sight.*"
-  quoteSize: 80
-  said: "the 2am shift, probably"
-  takeaway: "Robots break on weekends. *Your support should still be on.*"
+  layout: split
+  theme: light
+  flip: true
+  kicker: "24/7 coverage · robotics"
+  title: "In brightest day, in blackest night…"
+  titleSize: 60
+  panels:
+    - label: "Your support hours"
+      text: "Mon–Fri\n9am–5pm"
+      meta: "closed 128 of 168 hours a week"
+    - label: "When robots actually break"
+      text: "Saturday 9am setup.\nSunday afternoon jam.\n11pm: *\"it won't charge.\"*"
+      meta: "covered by a 24/7 team · L1 → L2"
