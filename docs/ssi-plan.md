@@ -7,7 +7,11 @@ It also ranks you against your industry and your network. Check it at <https://w
 
 | Date | Total | Brand | Find people | Insights | Relationships | Industry rank | Network rank |
 |---|---|---|---|---|---|---|---|
-| 2026-10-04 |  |  |  |  |  |  |  |
+| 2026-10-04 | **62** | 10.6 | 14.7 | 14.3 | 22.0 | top 1% (industry avg 26) | top 4% (network avg 38) |
+
+**Priorities from the baseline:** Brand has the most room (10.6/25), then Insights (14.3) and Find people (14.7).
+Relationships (22.0) is already strong; keep it steady. Target: **70+ by mid-November, 75–80 by end of year**,
+mostly from Brand (+6–8) and Insights (+3–4).
 
 Log a new row every Monday. SSI moves slowly. Judge it on 4-week trends, not day-to-day changes.
 
