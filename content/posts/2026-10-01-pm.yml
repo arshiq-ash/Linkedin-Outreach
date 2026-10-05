@@ -4,7 +4,7 @@ account: company
 pillar: Pop-culture lesson
 audience: Robotics & consumer tech
 reference: "The Office: Dwight Schrute's 'Question… False.' format"
-status: draft
+status: approved
 text: |
   Question: What's the #1 reason a $3,000 robot gets returned?
 
@@ -20,22 +20,30 @@ text: |
   → Product-fit questions ("Will this handle a 30° slope?")
   → Setting honest expectations before the order
 
-  Then we added after-sales: order status, technical troubleshooting, returns, refunds and exchanges, with L1 handling the known fixes and L2 taking the complex cases.
+  The 3 questions we ask before every robot sale:
+  1. Where will it actually run? Yard size, slope, floor type, obstacles.
+  2. What does success look like in week one?
+  3. Who's setting it up, and when? (Saturday morning is the usual answer.)
 
-  The team is now 15 people, running 24/7.
+  Three questions before checkout save a return, a refund and a 1-star review after it. That pre-sales team later grew into a full 24/7 pre- and after-sales operation.
 
   Bears. Beets. Better pre-sales.
 
   Robotics folks: what's the question you wish every customer asked before buying?
 hashtags: [Robotics, ConsumerTech, CustomerExperience, PreSales, TheOffice]
-first_comment: "Pre-sales + after-sales under one team, the 3 → 15 story: optiflowcx.com/portfolio"
-alt: "Quote card in the style of Dwight Schrute: 'It's defective? False.' Many robot returns start with the wrong pre-sale guidance."
+first_comment: "How we run pre-sales and after-sales as one team for robotics brands: optiflowcx.com/portfolio"
+alt: "Two-panel card: the return form says 'Defective', but the customer actually bought a robot for a flat lawn while their yard has a 30-degree slope, and nobody asked before checkout."
 card:
-  layout: scene
-  kicker: "Robotics CX"
-  episode: "QUESTION: WHY WAS THE ROBOT RETURNED?"
-  quote: "It's defective.\n*False.*"
-  quoteSize: 116
-  said: "Dwight, reviewing the returns report"
-  cxLabel: "FACT"
-  takeaway: "Many robotics returns start *before checkout*: wrong model, wrong expectations, nobody asked."
+  layout: split
+  theme: light
+  flip: true
+  kicker: "Robotics CX · pre-sales"
+  title: "Question: why was the robot returned? *\"Defective.\" False.*"
+  titleSize: 58
+  panels:
+    - label: "What the return form says"
+      text: "\"Defective.\""
+      meta: "reason code: not working as expected"
+    - label: "What actually happened"
+      text: "Bought for a flat lawn. Their yard has a *30° slope.* Nobody asked before checkout."
+      meta: "fixable with 3 pre-sales questions"

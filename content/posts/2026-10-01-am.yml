@@ -1,47 +1,40 @@
 date: 2026-10-01
-slot: am
+slot: am            # am = 08:15 ET / 17:15 PKT, pm = 12:15 ET / 21:15 PKT
 account: founder
-pillar: Case study / founder story
-audience: DTC e-commerce
-reference: "Friends: Chandler's 'Could it BE any more…'"
-status: draft
+pillar: Pop-culture lesson / case study
+audience: Hardware & consumer tech (applies to DTC too)
+reference: "Friends: 'The One Where No One's Ready' (S3E2), Joey wearing all of Chandler's clothes: 'Could I BE wearing any more clothes?'"
+status: approved    # draft -> approved -> posted
 text: |
-  Could we BE any more understaffed?
+  Could we BE on any more channels?
 
-  That was basically the brief when we started working with Silksilky, a DTC fashion brand.
+  Joey said it best, doing his Chandler impression while wearing every piece of Chandler's clothing at once. Piling everything on doesn't make you better prepared. It just makes it harder to move.
 
-  Where it started:
-  • 1 person on support
-  • Sizing questions, WISMO, returns, refunds and exchanges all in one inbox
-  • Each email handled from scratch
+  A lot of brands launch support the same way. Email, live chat, phone, WhatsApp, Instagram DMs, all on day one, with the same two people trying to cover them all.
 
-  What we did (nothing glamorous):
-  → Mapped every ticket type and wrote an SOP for each
-  → Built macros inside Re:amaze and worked orders directly in Shopify admin
-  → Added people only when the process could absorb them
+  The result is slow email, a chat widget nobody's watching, and a phone line that goes to voicemail.
 
-  Where it is now:
-  • A 6-person team, 24/7
-  • 100–150 emails per person per day
-  • Their Google rating moved from about 3.4 to 4.4 while we ran support
+  For a 3D-printer brand we support, we did the opposite:
+  → Email first. Macros, SOPs and a tagging system until response times were steady.
+  → Chat next, once email quality held. Live troubleshooting needs agents who already know the product inside out.
+  → Phone last, with a clear L1 → L2 path, because a frustrated caller with a failed print needs an answer, not a hold queue.
 
-  To be honest about that last number: the rating moved because of the brand's product, marketing and fulfilment too. We were one part of it.
+  The team grew from 4 to 14 people, and support now runs 24/7 across all three channels.
 
-  But I've seen what happens to ratings when support is one exhausted person at 1am. The difference is real.
+  Add a channel when you can run it well, not just because the tool lets you switch it on.
 
-  What was the first support hire or process that changed things for your brand?
-hashtags: [DTC, Ecommerce, CustomerExperience, Shopify, FounderStory]
-first_comment: "Full Silksilky journey on our portfolio: optiflowcx.com/portfolio"
-alt: "Stat card: support team scaled from 1 to 6 people, 24/7 coverage, 100 to 150 emails per person per day, Google rating 3.4 to 4.4 observed."
+  Which channel did you open too early?
+hashtags: [CustomerSupport, CustomerExperience, Hardware, Friends, Startups]
+first_comment: "The full journey (email → chat → phone, 4 → 14 people): optiflowcx.com/portfolio"
+alt: "Three-step card titled 'Could we BE on any more channels?': email first, chat once email quality holds, phone last with an L1 to L2 path; 4 to 14 agents, 24/7."
 card:
-  layout: stat
+  layout: list
+  theme: light
   voice: founder
-  kicker: "Case study · DTC fashion"
-  title: "Could we *BE* any more understaffed?"
-  from: "1"
-  to: "6"
-  unit: "support people · now running 24/7"
-  rows:
-    - { value: "100–150", label: "emails / person / day" }
-    - { value: "3.4 → 4.4", label: "Google rating, observed*" }
-  note: "*Observed during the engagement, alongside the brand's own product, marketing and fulfilment work."
+  kicker: "Channel strategy"
+  title: "Could we *BE* on any more channels?"
+  items:
+    - { head: "Email first", body: "Macros, SOPs and tagging until response times hold steady." }
+    - { head: "Chat when email quality holds", body: "Live troubleshooting needs agents who know the product cold." }
+    - { head: "Phone last, with an L1 → L2 path", body: "A caller with a failed print needs an answer, not a hold queue." }
+    - { head: "*4 → 14 agents*, 24/7 on all three", body: "A 3D-printer brand, one channel at a time." }
