@@ -2,7 +2,7 @@ date: 2026-10-01
 slot: am            # am = 08:15 ET / 17:15 PKT, pm = 12:15 ET / 21:15 PKT
 account: founder
 pillar: Pop-culture lesson / case study
-audience: Hardware & consumer tech (applies to DTC too)
+audience: Tech & consumer brands (applies to DTC too)
 reference: "Friends: 'The One Where No One's Ready' (S3E2), Joey wearing all of Chandler's clothes: 'Could I BE wearing any more clothes?'"
 status: approved    # draft -> approved -> posted
 text: |
@@ -14,17 +14,17 @@ text: |
 
   The result is slow email, a chat widget nobody's watching, and a phone line that goes to voicemail.
 
-  For a 3D-printer brand we support, we did the opposite:
+  For a tech brand we support, we did the opposite:
   → Email first. Macros, SOPs and a tagging system until response times were steady.
   → Chat next, once email quality held. Live troubleshooting needs agents who already know the product inside out.
-  → Phone last, with a clear L1 → L2 path, because a frustrated caller with a failed print needs an answer, not a hold queue.
+  → Phone last, with a clear L1 → L2 path, because a frustrated caller whose device won't work needs an answer, not a hold queue.
 
   The team grew from 4 to 14 people, and support now runs 24/7 across all three channels.
 
   Add a channel when you can run it well, not just because the tool lets you switch it on.
 
   Which channel did you open too early?
-hashtags: [CustomerSupport, CustomerExperience, Hardware, Friends, Startups]
+hashtags: [CustomerSupport, CustomerExperience, TechStartups, Friends, Startups]
 first_comment: "The full journey (email → chat → phone, 4 → 14 people): optiflowcx.com/portfolio"
 alt: "Three-step card titled 'Could we BE on any more channels?': email first, chat once email quality holds, phone last with an L1 to L2 path; 4 to 14 agents, 24/7."
 card:
@@ -36,5 +36,5 @@ card:
   items:
     - { head: "Email first", body: "Macros, SOPs and tagging until response times hold steady." }
     - { head: "Chat when email quality holds", body: "Live troubleshooting needs agents who know the product cold." }
-    - { head: "Phone last, with an L1 → L2 path", body: "A caller with a failed print needs an answer, not a hold queue." }
-    - { head: "*4 → 14 agents*, 24/7 on all three", body: "A 3D-printer brand, one channel at a time." }
+    - { head: "Phone last, with an L1 → L2 path", body: "A caller whose device won't work needs an answer, not a hold queue." }
+    - { head: "*4 → 14 agents*, 24/7 on all three", body: "A tech brand, one channel at a time." }
