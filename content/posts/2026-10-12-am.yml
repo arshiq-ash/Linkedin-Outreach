@@ -1,0 +1,49 @@
+date: 2026-10-12
+slot: am            # am = 08:15 ET / 17:15 PKT, pm = 12:15 ET / 21:15 PKT
+account: founder
+pillar: Pop-culture lesson / Q4 offer
+audience: DTC e-commerce
+reference: "Friends: 'The One Where Underdog Gets Away' (S1E9), Monica's three kinds of mashed potatoes"
+status: approved    # draft -> approved -> posted
+text: |
+  Monica made three kinds of mashed potatoes for one Thanksgiving dinner.
+
+  Lumpy. Smooth. With peas and onions.
+
+  She knew her guests. Everyone wanted something different, at the same time.
+
+  Your Q4 inbox works the same way. Between now and January, DTC customers show up wanting three very different things:
+
+  🛍️ Before they buy: "Will this arrive before Christmas?" "Does it run true to size?" "Can you gift-wrap it?"
+  📦 After they buy: "Where's my order?" (asked three times)
+  🎁 After the holidays: "Can I exchange this gift?"
+
+  Most brands prepare for one of these, usually WISMO. The pre-sales questions go unanswered and turn into abandoned carts. Then the January returns wave lands on a team that's already burnt out.
+
+  Black Friday is November 27. That leaves about 6 weeks to:
+  → Write macros for all three, not just tracking
+  → Add seasonal agents now, so they're trained before the rush, not during it
+  → Have shipping-cutoff answers and an exchange flow ready before customers ask
+
+  We're taking on a few DTC brands for Q4: seasonal pre-sales and after-sales agents, trained on your products and tools, scaling back down in January. No long lock-in.
+
+  Which one hits your inbox hardest: before, after, or after the holidays?
+hashtags: [DTC, Ecommerce, BFCM, CustomerExperience, Friends]
+first_comment: "How we've scaled DTC support teams for peak season: optiflowcx.com/portfolio. Open to a few Q4 pilots, DM me."
+alt: "Diagram: a DTC brand's Q4 inbox splits into three kinds of customers: before they buy (will it arrive by Christmas), after they buy (where's my order) and after the holidays (gift exchanges), each with what support should have ready."
+card:
+  layout: tree
+  theme: light
+  voice: founder
+  kicker: "Q4 for DTC brands"
+  title: "Three kinds of potatoes. *Three kinds of Q4 customers.*"
+  titleSize: 56
+  rootLabel: "YOUR INBOX, NOV → JAN"
+  root: "Everyone wants something different"
+  branches:
+    - { causeLabel: "BEFORE THEY BUY", cause: "\"Will it arrive before Christmas?\"", fixLabel: "HAVE READY", fix: "Pre-sales: cutoffs, sizing, gift options" }
+    - { causeLabel: "AFTER THEY BUY", cause: "\"Where's my order?\" (×3)", fixLabel: "HAVE READY", fix: "WISMO macros and carrier escalations" }
+    - { causeLabel: "AFTER THE HOLIDAYS", cause: "\"Can I exchange this gift?\"", fixLabel: "HAVE READY", fix: "A returns and exchange flow for January" }
+  stats:
+    - { value: "Nov 27", label: "Black Friday 2026" }
+    - { value: "~6 weeks", label: "to hire and train before it" }

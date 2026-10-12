@@ -1,0 +1,46 @@
+date: 2026-10-12
+slot: pm
+account: company
+pillar: Pop-culture lesson / Q4 offer
+audience: DTC e-commerce
+reference: "Home Alone (1990): the McCallisters rush to the airport and forget Kevin"
+status: approved
+text: |
+  Every year, someone gets left Home Alone in Q4.
+
+  In the movie, the McCallisters were so busy rushing to the airport that they forgot Kevin.
+
+  In DTC, it's the customer. The team is so busy launching Black Friday promos that the inbox gets forgotten. Questions sit for three days, carts get abandoned, and gift orders turn into chargebacks.
+
+  Here's the Q4 support calendar we plan with DTC brands:
+
+  October: Hire and train seasonal agents. Write the macros. Load the shipping cutoffs.
+  November: The pre-sales surge. Sizing, stock, delivery dates, discount codes, and live chat through BFCM weekend.
+  December: The WISMO peak. Carrier delays, "will it arrive by the 24th?", address changes.
+  January: Returns and exchanges. Gift swaps, refunds, size exchanges.
+
+  Each month needs different skills. One seasonal team, trained in October, can cover all four.
+
+  What we offer DTC brands for Q4:
+  → Seasonal pre-sales and after-sales agents, trained on your products, policies and tools (Shopify, Re:amaze, Zoho Desk and more)
+  → Coverage that stretches to evenings, weekends and 24/7 during peak
+  → Scale up for BFCM, scale down in January, with no long lock-in
+
+  Don't leave your customers Home Alone this year.
+
+  DTC founders: is your Q4 support plan ready, or still "we'll figure it out"?
+hashtags: [DTC, Ecommerce, BlackFriday, CustomerSupport, Shopify]
+first_comment: "Planning Q4 support? We're onboarding a few DTC brands for seasonal pre-sales and after-sales: optiflowcx.com/portfolio · info@optiflowcx.com"
+alt: "Timeline card titled 'Don't leave your customers Home Alone this Q4': October hire and train, November pre-sales surge, December WISMO peak, January returns and exchanges."
+card:
+  layout: list
+  theme: light
+  kicker: "Q4 support calendar · DTC"
+  title: "Don't leave your customers *Home Alone* this Q4."
+  titleSize: 58
+  items:
+    - { head: "October: hire and train", body: "Seasonal agents, macros, shipping cutoffs loaded." }
+    - { head: "November: the pre-sales surge", body: "Sizing, stock, delivery dates, BFCM live chat." }
+    - { head: "December: the WISMO peak", body: "Carrier delays, \"will it arrive by the 24th?\"" }
+    - { head: "January: returns and exchanges", body: "Gift swaps, refunds, size exchanges." }
+    - { head: "*Scale up for BFCM, down in January*", body: "Pre-sales + after-sales, no long lock-in." }
