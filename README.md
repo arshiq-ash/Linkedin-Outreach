@@ -24,6 +24,7 @@ safe daily batches. See [docs/automation-playbook.md](docs/automation-playbook.m
 | `docs/content-strategy.md` | Audiences, weekly mix, pop-culture formula, image guardrails, page growth |
 | `docs/profile-and-page.md` | Headline, About section, and profile/page checklists |
 | `docs/setup.md` | Turning on auto-publishing + the weekly and daily routine |
+| `docs/linkedin-algorithm.md` | How posts reach people's feeds and the levers we use (hooks, dwell time, comments, topic consistency) |
 | `docs/ssi-plan.md` | Social Selling Index plan: what moves each of the 4 parts, daily 30-minute routine, weekly tracking table |
 | `docs/pipeline.md` | Network scoring (who to talk to) and deal tracking (reply drafts, follow-ups, which opener books meetings) |
 | `vendor/` | Two MIT-licensed tools configured for OptiFlowCX: jev-gtm-cookbook and jev-lead-scorer |

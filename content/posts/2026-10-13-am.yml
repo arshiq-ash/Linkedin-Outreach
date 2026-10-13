@@ -1,0 +1,43 @@
+date: 2026-10-13
+slot: am            # am = 08:15 ET / 17:15 PKT, pm = 12:15 ET / 21:15 PKT
+account: founder
+pillar: Pop-culture lesson / Q4 offer
+audience: DTC e-commerce
+reference: "Seinfeld: 'The Serenity Now' (S9E3), Frank Costanza yelling 'Serenity now!'"
+status: approved    # draft -> approved -> posted
+text: |
+  SERENITY NOW!
+
+  Frank Costanza's doctor told him to yell it whenever his blood pressure spiked. It didn't work for Frank, and it won't work for your support team on Black Friday either.
+
+  Here's what BFCM weekend chat actually looks like for a DTC clothing brand:
+  → 9:02am: "Your discount code isn't working"
+  → 9:04am: "Is the black hoodie coming back in medium?"
+  → 9:05am: "If I order today, will it arrive before the 20th?"
+  → 9:07am: "I got charged twice"
+  → 9:10am: the same four questions, 60 more times
+
+  Every one of these is a buying question. A customer who waits 2 hours for an answer about a discount code doesn't wait. They close the tab and buy somewhere else.
+
+  What keeps a team calm (no yelling required):
+  → Macros for the top 10 BFCM questions, ready before the sale goes live
+  → A "known issues" note updated hourly, so agents know the code is broken before the 60th customer tells them
+  → Extra trained agents on chat for the weekend, not people borrowed from the warehouse
+  → A fast escalation path for payment problems
+
+  Black Friday is November 27. The time to set this up is now, not Thursday night.
+
+  What's the one BFCM question your team dreads most?
+hashtags: [DTC, BFCM, Ecommerce, CustomerExperience, Seinfeld]
+first_comment: "We're staffing seasonal pre-sales and after-sales teams for a few DTC brands this Q4: optiflowcx.com/portfolio"
+alt: "Sitcom-style quote card: 'SERENITY NOW!' with the takeaway that Black Friday chat questions are buying questions and need fast answers."
+card:
+  layout: scene
+  theme: light
+  voice: founder
+  kicker: "BFCM weekend · DTC"
+  episode: "S09E03 · THE ONE WITH THE BROKEN DISCOUNT CODE"
+  quote: "SERENITY *NOW!*"
+  quoteSize: 120
+  said: "a DTC support team, 9:07am on Black Friday"
+  takeaway: "BFCM chat questions are *buying questions.* Slow answers send customers to another tab."

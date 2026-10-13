@@ -1,0 +1,40 @@
+date: 2026-10-13
+slot: pm
+account: company
+pillar: Pop-culture lesson / framework / Q4 offer
+audience: DTC e-commerce
+reference: "The Office: 'Stress Relief' (S5E14), Dwight's fire drill"
+status: approved
+text: |
+  Run the fire drill before the fire.
+
+  Dwight's version in The Office (a real fire, locked doors, Stanley's heart attack) is what not to do. But the idea was right: find out how your team reacts under pressure before it matters.
+
+  For DTC brands, that pressure is BFCM. Here's the support dry run we do with brands about 4 weeks out:
+
+  1. Test every discount code on mobile and desktop, then write the macro for when one fails.
+  2. Decide what agents say when a size sells out mid-sale, and which alternatives they offer.
+  3. Confirm shipping cutoffs by carrier and region, and pin them in the helpdesk.
+  4. Simulate a surge: send 50 test tickets in an hour and see where they pile up.
+  5. Map escalations: who handles payment errors, fraud flags and VIP orders, and how fast.
+  6. Staff for peak hours, not average hours. Chat spikes right after every promo email goes out.
+
+  Two hours of rehearsal in October saves a weekend of chaos in November.
+
+  We run this dry run for DTC brands and staff the seasonal pre-sales and after-sales team behind it. Scale up for BFCM, scale down in January, with no long lock-in.
+
+  Which of the six would fail first at your brand?
+hashtags: [DTC, BlackFriday, Ecommerce, CustomerSupport, TheOffice]
+first_comment: "Want the dry run as a checklist for your team? Comment \"DRILL\" and we'll send it. More on our Q4 support: optiflowcx.com/portfolio"
+alt: "Checklist card titled 'Run the fire drill before the fire': test discount codes, plan sold-out sizes, pin shipping cutoffs, simulate a ticket surge, map escalations, staff for peak hours."
+card:
+  layout: list
+  theme: light
+  kicker: "BFCM dry run · 4 weeks out"
+  title: "Run the fire drill *before* the fire."
+  items:
+    - { head: "Test every discount code", body: "Mobile and desktop, plus the macro for when one fails." }
+    - { head: "Plan for sold-out sizes", body: "What agents say, and which alternatives they offer." }
+    - { head: "Pin shipping cutoffs", body: "By carrier and region, inside the helpdesk." }
+    - { head: "Simulate a surge", body: "50 test tickets in an hour. Where do they pile up?" }
+    - { head: "Map escalations and staff for peaks", body: "Payment errors, fraud, VIPs, and post-email chat spikes." }
