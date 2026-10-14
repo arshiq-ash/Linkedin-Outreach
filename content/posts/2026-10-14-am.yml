@@ -1,0 +1,44 @@
+date: 2026-10-14
+slot: am            # am = 08:15 ET / 17:15 PKT, pm = 12:15 ET / 21:15 PKT
+account: founder
+pillar: Pop-culture story / Q4 offer
+audience: DTC e-commerce
+reference: "Apollo 13 (1995): 'Houston, we have a problem' and the CO2 scrubber fix"
+status: approved    # draft -> approved -> posted
+text: |
+  "Houston, we have a problem."
+
+  Picture this. It's 10:47pm on Black Friday. A skincare founder gets a Slack message from her one support person:
+
+  "The new discount code is stacking with the email code. Customers are getting 70% off. 400 orders and counting. Inbox is on fire."
+
+  Then the questions start:
+  → Do we cancel the orders or honour them?
+  → What do we tell the customers who are already emailing?
+  → Who's allowed to make that call at 11pm?
+
+  Nobody knows. So nobody answers. By morning there are 900 tickets, and half of them say "I'm disputing this charge."
+
+  In Apollo 13, the engineers on the ground had to make a square filter fit a round hole using only what was on the spacecraft. They solved it because they had a team, a process and someone clearly in charge.
+
+  Q4 support needs the same thing before the problem shows up:
+  → A crisis owner for BFCM weekend, with authority to decide
+  → Pre-written messages for "pricing error", "out of stock" and "shipping delay"
+  → Enough trained agents on shift to answer the first 500 emails in hours, not days
+
+  You can't stop every problem. But you can decide in October who answers the call in November.
+
+  What's the "Houston" moment you never want to repeat?
+hashtags: [DTC, BFCM, Ecommerce, CustomerExperience, Apollo13]
+first_comment: "We're staffing seasonal BFCM support teams for a few DTC brands, with crisis macros included: optiflowcx.com/portfolio"
+alt: "Quote card: 'Houston, we have a problem' with the takeaway that DTC brands need a Black Friday crisis playbook before the problem shows up."
+card:
+  layout: scene
+  theme: light
+  voice: founder
+  kicker: "BFCM crisis playbook · DTC"
+  episode: "10:47PM · BLACK FRIDAY · 400 ORDERS AT 70% OFF"
+  quote: "Houston, *we have a problem.*"
+  quoteSize: 100
+  said: "a DTC founder, reading Slack on Black Friday night"
+  takeaway: "You can't stop every problem. *Decide in October* who answers the call in November."
